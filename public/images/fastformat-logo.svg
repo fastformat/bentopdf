@@ -1,0 +1,33 @@
+<svg
+  version="1.1"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  x="0"
+  y="0"
+  width="331.79"
+  height="459.589"
+  viewBox="0, 0, 331.79, 459.589"
+>
+  <g id="Layer_1">
+    <path style="opacity: 1" d="M201.542,329.515 L266.534,329.515 L201.546,264.528 z" fill="#CE3091"></path>
+    <path style="opacity: 1" d="M0,64.986 L64.99,64.986 L0.001,-0 z" fill="#44B544"></path>
+    <path style="opacity: 1" d="M201.542,394.505 L266.534,329.515 L201.542,329.515 z" fill="#EE2C90"></path>
+    <path style="opacity: 1" d="M201.546,264.528 L136.557,329.517 L201.542,329.515 z" fill="#A4C928"></path>
+    <path style="opacity: 1" d="M136.557,329.517 L201.542,394.505 L201.542,329.515 z" fill="#0077B5"></path>
+    <path style="opacity: 1" d="M136.463,394.599 L201.45,394.599 L136.465,329.611 z" fill="#A83393"></path>
+    <path style="opacity: 1" d="M136.463,459.589 L201.45,394.599 L136.463,394.599 z" fill="#40B8E7"></path>
+    <path style="opacity: 1" d="M201.791,120.024 L200.512,28.128 L155.202,74.713 z" fill="#B49C8E"></path>
+    <path style="opacity: 1" d="M136.465,329.611 L71.475,394.601 L136.463,394.599 z" fill="#EE3B86"></path>
+    <path style="opacity: 1" d="M67.583,64.679 L2.594,129.668 L67.582,129.665 z" fill="#A1D4C3"></path>
+    <path style="opacity: 1" d="M71.475,394.601 L136.463,459.589 L136.463,394.599 z" fill="#34499D"></path>
+    <path style="opacity: 1" d="M201.542,199.346 L266.534,199.347 L201.546,134.36 z" fill="#40B8E7"></path>
+    <path style="opacity: 1" d="M201.542,264.337 L266.534,199.348 L201.542,199.347 z" fill="#C5D400"></path>
+    <path style="opacity: 1" d="M201.546,134.361 L136.557,199.35 L201.542,199.347 z" fill="#F7A300"></path>
+    <path style="opacity: 1" d="M136.557,199.349 L201.542,264.336 L201.542,199.346 z" fill="#00A490"></path>
+    <path style="opacity: 1" d="M266.802,264.604 L331.79,264.604 L266.804,199.618 z" fill="#ED2C8F"></path>
+    <path style="opacity: 1" d="M266.802,329.595 L331.79,264.604 L266.802,264.604 z" fill="#56BD87"></path>
+    <path style="opacity: 1" d="M266.804,199.618 L201.814,264.607 L266.802,264.604 z" fill="#F27C64"></path>
+    <path style="opacity: 1" d="M201.814,264.607 L266.802,329.595 L266.802,264.604 z" fill="#E4E000"></path>
+    <path style="opacity: 1" d="M71.65,134.441 L136.639,199.428 L136.639,134.439 z" fill="#ED4B37"></path>
+  </g>
+</svg>
