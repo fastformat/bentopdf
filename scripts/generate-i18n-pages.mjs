@@ -55,8 +55,10 @@ const ENGLISH_TOOLS = loadEnglishTools();
 
 // TODO@ALAM: Let users build only a single language
 function buildUrl(langPrefix, pagePath) {
+  // SITE_URL já é a raiz pública COMPLETA (inclui qualquer subpasta, ex.: https://fastformat.co/pdf).
+  // Não re-adicionar BASE_PATH aqui — senão o canonical duplica o base (ex.: /pdf/pdf/...).
+  // BASE_URL/BASE_PATH controla apenas o base dos assets no Vite, não as URLs absolutas.
   const parts = [SITE_URL];
-  if (BASE_PATH && BASE_PATH !== '') parts.push(BASE_PATH.replace(/^\//, ''));
   if (langPrefix) parts.push(langPrefix);
   if (pagePath) parts.push(pagePath.replace(/^\//, ''));
   return parts.filter(Boolean).join('/').replace(/\/+$/, '') || SITE_URL;
