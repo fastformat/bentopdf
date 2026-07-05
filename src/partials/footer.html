@@ -1,6 +1,20 @@
 {{#if simpleMode}} {{> footer-simple}} {{else}}
 <footer class="mt-16 border-t-2 border-gray-700 py-8">
   <div class="container mx-auto px-4">
+    <div class="mb-8 rounded-xl bg-indigo-600/10 border border-indigo-500/30 p-6 text-center">
+      <p class="text-white font-semibold text-lg mb-1">
+        Escrevendo seu TCC, artigo ou dissertação?
+      </p>
+      <p class="text-gray-300 text-sm mb-4">
+        O FastFormat formata automaticamente em ABNT, APA e Vancouver — sem dor de cabeça.
+      </p>
+      <a
+        href="https://fastformat.co/?utm_source=pdf-tools&utm_medium=footer-cta"
+        class="inline-flex items-center gap-2 bg-indigo-600 text-white font-semibold px-5 py-2 rounded-full hover:bg-indigo-500 transition-colors"
+      >
+        Formatar meu trabalho grátis →
+      </a>
+    </div>
     <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left">
       <div class="mb-8 md:mb-0">
         <div class="flex items-center justify-center md:justify-start mb-4">
@@ -14,6 +28,12 @@
         </div>
         <p id="footer-copyright" class="text-gray-400 text-sm" {{#unless footerText}}data-i18n="footer.copyright"{{/unless}}>
           {{#if footerText}}{{footerText}}{{else}}&copy; 2026 BentoPDF. All rights reserved.{{/if}}
+        </p>
+        <p class="text-gray-400 text-xs mt-2">
+          Baseado no
+          <a href="https://github.com/alam00000/bentopdf" class="underline hover:text-indigo-400" target="_blank" rel="noopener noreferrer">BentoPDF</a>
+          (AGPL-3.0) ·
+          <a href="https://github.com/fastformat/bentopdf" class="underline hover:text-indigo-400" target="_blank" rel="noopener noreferrer">Código-fonte</a>
         </p>
         <p class="text-gray-400 text-xs mt-2">
           <span data-i18n="footer.version">Version</span>
