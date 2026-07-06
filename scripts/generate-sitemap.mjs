@@ -13,28 +13,26 @@ const SITE_URL = (process.env.SITE_URL || 'https://www.bentopdf.com').replace(
 );
 const EXCLUDED_PAGES = new Set(['404', 'wasm-settings']);
 
-const languages = fs.readdirSync(LOCALES_DIR).filter((file) => {
-  return fs.statSync(path.join(LOCALES_DIR, file)).isDirectory();
-});
+const languages = []; // pt-BR único (sem hreflang)
 
 const PRIORITY_MAP = {
   index: 1.0,
   tools: 0.9,
-  'pdf-converter': 0.9,
-  'pdf-editor': 0.9,
-  'pdf-security': 0.9,
-  'pdf-merge-split': 0.9,
-  'merge-pdf': 0.9,
-  'split-pdf': 0.9,
-  'compress-pdf': 0.9,
-  'edit-pdf': 0.9,
-  'word-to-pdf': 0.9,
-  'excel-to-pdf': 0.9,
-  'powerpoint-to-pdf': 0.9,
-  'jpg-to-pdf': 0.9,
-  'pdf-to-docx': 0.9,
-  'pdf-to-excel': 0.9,
-  'pdf-to-jpg': 0.9,
+  'conversor-pdf': 0.9,
+  'editor-pdf': 0.9,
+  'proteger-pdf': 0.9,
+  'juntar-e-dividir-pdf': 0.9,
+  'juntar-pdf': 0.9,
+  'dividir-pdf': 0.9,
+  'comprimir-pdf': 0.9,
+  'editar-pdf': 0.9,
+  'word-para-pdf': 0.9,
+  'excel-para-pdf': 0.9,
+  'powerpoint-para-pdf': 0.9,
+  'jpg-para-pdf': 0.9,
+  'pdf-para-word': 0.9,
+  'pdf-para-excel': 0.9,
+  'pdf-para-jpg': 0.9,
   about: 0.8,
   faq: 0.8,
   contact: 0.7,

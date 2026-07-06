@@ -225,7 +225,7 @@ export const applyTranslations = (): void => {
 
 export const rewriteLinks = (): void => {
   const currentLang = getLanguageFromUrl();
-  if (currentLang === 'en') return;
+  if (currentLang === 'en' || currentLang === 'pt') return;
 
   const basePath = import.meta.env.BASE_URL.replace(/\/$/, '');
   const links = document.querySelectorAll('a[href]');
