@@ -106,7 +106,7 @@
         >
           <i data-lucide="arrow-left" class="cursor-pointer"></i>
           <span class="cursor-pointer" data-i18n="tools.backToTools"
-            >Back to Tools</span
+            >Voltar para Ferramentas</span
           >
         </button>
 
@@ -114,11 +114,11 @@
           class="text-2xl font-bold text-white mb-2"
           data-i18n="tools:fontToOutline.name"
         >
-          Font to Outline
+          Vetorizar Fontes Pdf
         </h1>
         <p class="text-gray-400 mb-6" data-i18n="tools:fontToOutline.subtitle">
-          Convert all fonts to vector outlines for consistent rendering across
-          all devices.
+          Converta, edite e processe seus arquivos de forma simples, rápida e
+          100% no navegador.
         </p>
 
         <div
@@ -132,18 +132,20 @@
             ></i>
             <p class="mb-2 text-sm text-gray-400">
               <span class="font-semibold" data-i18n="upload.clickToSelect"
-                >Click to select files</span
+                >Clique para selecionar um arquivo</span
               >
-              <span data-i18n="upload.orDragAndDrop">or drag and drop</span>
+              <span data-i18n="upload.orarraste e solte"
+                >ou arraste e solte</span
+              >
             </p>
             <p
               class="text-xs text-gray-500"
               data-i18n="upload.hints.oneOrMorePdfs"
             >
-              One or more PDF files
+              Um ou mais arquivos PDF
             </p>
             <p class="text-xs text-gray-500" data-i18n="upload.filesNeverLeave">
-              Your files never leave your device.
+              Seus arquivos nunca saem do seu dispositivo.
             </p>
           </div>
           <input
@@ -160,13 +162,13 @@
             id="add-more-btn"
             class="btn bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-4 py-2 rounded-lg flex items-center gap-2"
           >
-            <i data-lucide="plus"></i> <span>Add More Files</span>
+            <i data-lucide="plus"></i> <span>Adicionar Mais Arquivos</span>
           </button>
           <button
             id="clear-files-btn"
             class="btn bg-gray-700 hover:bg-gray-600 text-white font-semibold px-4 py-2 rounded-lg flex items-center gap-2"
           >
-            <i data-lucide="trash-2"></i> <span>Clear All</span>
+            <i data-lucide="trash-2"></i> <span>Limpar Tudo</span>
           </button>
         </div>
 
@@ -184,12 +186,12 @@
               <li>Ideal for print-ready PDFs</li>
             </ul>
             <p class="text-xs text-gray-500 mt-2">
-              Note: Text will no longer be selectable or searchable after
+              Nota: O texto não será mais selecionável ou pesquisável após
               conversion.
             </p>
           </div>
           <button id="process-btn" class="btn-gradient w-full">
-            Convert to Outlines
+            Processar
           </button>
         </div>
       </div>
@@ -204,7 +206,7 @@
       >
         <div class="solid-spinner"></div>
         <p id="loader-text" class="text-white text-lg font-medium">
-          Processing...
+          Processando...
         </p>
       </div>
     </div>
@@ -217,7 +219,7 @@
         class="bg-gray-800 rounded-lg shadow-xl p-6 max-w-sm w-full border border-gray-700"
       >
         <h3 id="alert-title" class="text-xl font-bold text-white mb-2">
-          Alert
+          Alerta
         </h3>
         <p id="alert-message" class="text-gray-300 mb-6"></p>
         <button
@@ -234,7 +236,7 @@
         class="text-2xl md:text-3xl font-bold text-white mb-8 text-center"
         data-i18n="howItWorks.title"
       >
-        How It Works
+        Como Funciona
       </h2>
       <div class="space-y-6">
         <div class="flex items-start gap-4">
@@ -270,7 +272,7 @@
             3
           </div>
           <div class="flex-1">
-            <h3 class="text-lg font-semibold text-white mb-1">Download</h3>
+            <h3 class="text-lg font-semibold text-white mb-1">Baixar</h3>
             <p class="text-gray-400">Get your font-independent PDF instantly</p>
           </div>
         </div>
@@ -282,14 +284,14 @@
         class="text-2xl md:text-3xl font-bold text-white mb-6 text-center"
         data-i18n="relatedTools.title"
       >
-        Related PDF Tools
+        Ferramentas de PDF Relacionadas
       </h2>
       <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
         <a
           href="achatar-pdf.html"
           class="block bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition-colors border border-gray-700"
         >
-          <h3 class="text-white font-semibold mb-1">Flatten PDF</h3>
+          <h3 class="text-white font-semibold mb-1">Achatar PDF</h3>
           <p class="text-gray-400 text-sm">Make forms non-editable</p>
         </a>
         <a
@@ -303,8 +305,8 @@
           href="comprimir-pdf.html"
           class="block bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition-colors border border-gray-700"
         >
-          <h3 class="text-white font-semibold mb-1">Compress PDF</h3>
-          <p class="text-gray-400 text-sm">Reduce PDF file size</p>
+          <h3 class="text-white font-semibold mb-1">Comprimir PDF</h3>
+          <p class="text-gray-400 text-sm">Reduzir tamanho do arquivo PDF</p>
         </a>
         <a
           href="pdf-para-pdfa.html"
@@ -328,7 +330,7 @@
         class="text-2xl md:text-3xl font-bold text-white mb-6 text-center"
         data-i18n="faq.sectionTitle"
       >
-        Frequently Asked Questions
+        Perguntas Frequentes
       </h2>
       <div class="space-y-4">
         <details class="bg-gray-800 p-5 rounded-lg border border-gray-700">
@@ -362,7 +364,7 @@
           <summary
             class="cursor-pointer font-semibold text-white flex items-center justify-between"
           >
-            Will the text still be selectable?
+            O texto ainda será selecionável?
             <i data-lucide="chevron-down" class="w-5 h-5"></i>
           </summary>
           <p class="mt-3 text-gray-400">
@@ -379,8 +381,8 @@
             <i data-lucide="chevron-down" class="w-5 h-5"></i>
           </summary>
           <p class="mt-3 text-gray-400">
-            Yes! All processing happens entirely in your browser using
-            WebAssembly. Your files never leave your device.
+            Sim! Todo o processamento acontece inteiramente no seu navegador
+            usando WebAssembly. seus arquivos nunca saem do seu dispositivo.
           </p>
         </details>
       </div>
@@ -398,7 +400,7 @@
       {
         "@context": "https://schema.org",
         "@type": "SoftwareApplication",
-        "name": "Font to Outline PDF - FastFormat",
+        "name": "Vetorizar Fontes Pdf - FastFormat",
         "applicationCategory": "PDF Tool",
         "operatingSystem": "Any - Web Browser",
         "offers": {
@@ -412,26 +414,26 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "HowTo",
-        "name": "How to convert fonts to outlines in PDF online",
-        "description": "Learn how to convert PDF fonts to vector paths",
+        "@type": "Como ",
+        "name": "Como vetorizar fontes pdf online",
+        "description": "Aprenda como fazer vetorizar fontes pdf usando o FastFormat",
         "step": [
           {
-            "@type": "HowToStep",
+            "@type": "Como Step",
             "position": 1,
             "name": "Upload PDF",
             "text": "Select your PDF file with embedded fonts"
           },
           {
-            "@type": "HowToStep",
+            "@type": "Como Step",
             "position": 2,
             "name": "Convert",
             "text": "Ghostscript converts all fonts to vector paths"
           },
           {
-            "@type": "HowToStep",
+            "@type": "Como Step",
             "position": 3,
-            "name": "Download",
+            "name": "Baixar",
             "text": "Get your font-independent PDF instantly"
           }
         ]
