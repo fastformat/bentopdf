@@ -68,7 +68,7 @@
     <!-- Mobile Web App -->
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-title" content="Add Blank Page" />
+    <meta name="apple-mobile-web-app-title" content="FastFormat" />
 
     <title>Adicionar Página em Branco no PDF | FastFormat</title>
     <meta
@@ -119,19 +119,20 @@
           class="flex items-center gap-2 text-indigo-400 hover:text-indigo-300 mb-6 font-semibold"
         >
           <i data-lucide="arrow-left" class="cursor-pointer"></i>
-          <span class="cursor-pointer" data-i18n="tools.backToTools">
-            Back to Tools
-          </span>
+          <span class="cursor-pointer" data-i18n="tools.backToTools"
+            >Voltar para Ferramentas</span
+          >
         </button>
 
         <h1
           class="text-2xl font-bold text-white mb-2"
           data-i18n="tools:addBlankPage.name"
         >
-          Add Blank Page
+          Adicionar Pagina Em Branco Pdf
         </h1>
         <p class="text-gray-400 mb-6" data-i18n="tools:addBlankPage.subtitle">
-          Insert an empty page anywhere in your PDF.
+          Converta, edite e processe seus arquivos de forma simples, rápida e
+          100% no navegador.
         </p>
 
         <div
@@ -145,15 +146,17 @@
             ></i>
             <p class="mb-2 text-sm text-gray-400">
               <span class="font-semibold" data-i18n="upload.clickToSelect"
-                >Click to select a file</span
+                >Clique para selecionar um arquivo</span
               >
-              <span data-i18n="upload.orDragAndDrop">or drag and drop</span>
+              <span data-i18n="upload.orarraste e solte"
+                >ou arraste e solte</span
+              >
             </p>
             <p class="text-xs text-gray-500" data-i18n="upload.hints.singlePdf">
               A single PDF file
             </p>
             <p class="text-xs text-gray-500" data-i18n="upload.filesNeverLeave">
-              Your files never leave your device.
+              Seus arquivos nunca saem do seu dispositivo.
             </p>
           </div>
           <input
@@ -169,21 +172,22 @@
         <div id="tool-options" class="hidden mt-6">
           <div class="p-3 bg-gray-900 rounded-lg border border-gray-700 mb-4">
             <p class="text-sm text-gray-300">
-              <strong class="text-white">How it works:</strong>
+              <strong class="text-white">Como funciona:</strong>
             </p>
             <ul
               class="list-disc list-inside text-xs text-gray-400 mt-1 space-y-1"
             >
               <li>
-                Specify the position where blank pages should be inserted.
+                Especifique a posição onde as páginas em branco devem ser
+                inseridas.
               </li>
               <li>
-                Position 0 inserts at the beginning, position equal to page
-                count inserts at the end.
+                A posição 0 insere no início; a posição igual ao número de
+                páginas insere no final.
               </li>
               <li>
-                Blank pages will match the size of the first page in your
-                document.
+                Páginas em branco terão o mesmo tamanho da primeira página do
+                seu documento.
               </li>
             </ul>
           </div>
@@ -193,7 +197,7 @@
               <label
                 for="page-position"
                 class="block mb-2 text-sm font-medium text-gray-300"
-                >Insert after page</label
+                >Inserir após a página</label
               >
               <input
                 type="number"
@@ -204,14 +208,14 @@
                 placeholder="0"
               />
               <p id="page-position-hint" class="text-xs text-gray-500 mt-1">
-                Enter 0 to insert at the beginning.
+                Digite 0 para inserir no início.
               </p>
             </div>
             <div>
               <label
                 for="page-count"
                 class="block mb-2 text-sm font-medium text-gray-300"
-                >Number of blank pages</label
+                >Número de páginas em branco</label
               >
               <input
                 type="number"
@@ -225,7 +229,7 @@
           </div>
 
           <button id="process-btn" class="btn-gradient w-full mt-4">
-            Add Blank Pages
+            Processar
           </button>
         </div>
       </div>
@@ -246,7 +250,7 @@
           data-i18n="loader.processing"
           data-i18n="loader.processing"
         >
-          Processing...
+          Processando...
         </p>
       </div>
     </div>
@@ -265,7 +269,7 @@
           data-i18n="alert.title"
           data-i18n="alert.title"
         >
-          Alert
+          Alerta
         </h3>
         <p id="alert-message" class="text-gray-300 mb-6"></p>
         <button
@@ -277,13 +281,13 @@
       </div>
     </div>
 
-    <!-- How It Works Section -->
+    <!-- Seção Como Funciona -->
     <section class="max-w-4xl mx-auto px-4 py-12">
       <h2
         class="text-2xl md:text-3xl font-bold text-white mb-8 text-center"
         data-i18n="howItWorks.title"
       >
-        How It Works
+        Como Funciona
       </h2>
       <div class="space-y-6">
         <div class="flex items-start gap-4">
@@ -293,9 +297,11 @@
             1
           </div>
           <div class="flex-1">
-            <h3 class="text-lg font-semibold text-white mb-1">Upload File</h3>
+            <h3 class="text-lg font-semibold text-white mb-1">
+              Enviar Arquivo
+            </h3>
             <p class="text-gray-400" data-i18n="howItWorks.step1">
-              Click or drag and drop your file to begin
+              Clique ou arraste e solte seu arquivo para começar
             </p>
           </div>
         </div>
@@ -306,9 +312,9 @@
             2
           </div>
           <div class="flex-1">
-            <h3 class="text-lg font-semibold text-white mb-1">Process</h3>
+            <h3 class="text-lg font-semibold text-white mb-1">Processar</h3>
             <p class="text-gray-400" data-i18n="howItWorks.step2">
-              Click the process button to start
+              Clique no botão de processar para começar
             </p>
           </div>
         </div>
@@ -319,9 +325,9 @@
             3
           </div>
           <div class="flex-1">
-            <h3 class="text-lg font-semibold text-white mb-1">Download</h3>
+            <h3 class="text-lg font-semibold text-white mb-1">Baixar</h3>
             <p class="text-gray-400" data-i18n="howItWorks.step3">
-              Save your processed file instantly
+              Salve seu arquivo processado instantaneamente
             </p>
           </div>
         </div>
@@ -334,43 +340,53 @@
         class="text-2xl md:text-3xl font-bold text-white mb-6 text-center"
         data-i18n="relatedTools.title"
       >
-        Related PDF Tools
+        Ferramentas de PDF Relacionadas
       </h2>
       <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
         <a
           href="juntar-pdf.html"
           class="block bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition-colors border border-gray-700"
         >
-          <h3 class="text-white font-semibold mb-1">Merge Pdf</h3>
-          <p class="text-gray-400 text-sm">Free online merge pdf tool</p>
+          <h3 class="text-white font-semibold mb-1">Juntar PDF</h3>
+          <p class="text-gray-400 text-sm">
+            Ferramenta online gratuita para juntar PDF
+          </p>
         </a>
         <a
           href="comprimir-pdf.html"
           class="block bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition-colors border border-gray-700"
         >
-          <h3 class="text-white font-semibold mb-1">Compress Pdf</h3>
-          <p class="text-gray-400 text-sm">Free online compress pdf tool</p>
+          <h3 class="text-white font-semibold mb-1">Comprimir PDF</h3>
+          <p class="text-gray-400 text-sm">
+            Ferramenta online gratuita para comprimir PDF
+          </p>
         </a>
         <a
           href="dividir-pdf.html"
           class="block bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition-colors border border-gray-700"
         >
-          <h3 class="text-white font-semibold mb-1">Split Pdf</h3>
-          <p class="text-gray-400 text-sm">Free online split pdf tool</p>
+          <h3 class="text-white font-semibold mb-1">Dividir PDF</h3>
+          <p class="text-gray-400 text-sm">
+            Ferramenta online gratuita para dividir PDF
+          </p>
         </a>
         <a
           href="editar-pdf.html"
           class="block bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition-colors border border-gray-700"
         >
-          <h3 class="text-white font-semibold mb-1">Edit Pdf</h3>
-          <p class="text-gray-400 text-sm">Free online edit pdf tool</p>
+          <h3 class="text-white font-semibold mb-1">Editar PDF</h3>
+          <p class="text-gray-400 text-sm">
+            Ferramenta online gratuita para editar PDF
+          </p>
         </a>
         <a
           href="girar-pdf.html"
           class="block bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition-colors border border-gray-700"
         >
-          <h3 class="text-white font-semibold mb-1">Rotate Pdf</h3>
-          <p class="text-gray-400 text-sm">Free online rotate pdf tool</p>
+          <h3 class="text-white font-semibold mb-1">Girar PDF</h3>
+          <p class="text-gray-400 text-sm">
+            Ferramenta online gratuita para girar PDF
+          </p>
         </a>
       </div>
     </section>
@@ -381,43 +397,48 @@
         class="text-2xl md:text-3xl font-bold text-white mb-6 text-center"
         data-i18n="faq.sectionTitle"
       >
-        Frequently Asked Questions
+        Perguntas Frequentes
       </h2>
       <div class="space-y-4">
         <details class="bg-gray-800 p-5 rounded-lg border border-gray-700">
           <summary
             class="cursor-pointer font-semibold text-white flex items-center justify-between"
           >
-            Is add blank page really free?
+            O adicionar pagina em branco pdf é realmente grátis?
             <i data-lucide="chevron-down" class="w-5 h-5"></i>
           </summary>
           <p class="mt-3 text-gray-400">
-            Yes! FastFormat is 100% free with no hidden fees, no signup
-            required, and unlimited file processing.
+            Sim! O FastFormat é 100% grátis, sem taxas ocultas, sem necessidade
+            de cadastro e com processamento ilimitado de arquivos.
           </p>
         </details>
         <details class="bg-gray-800 p-5 rounded-lg border border-gray-700">
           <summary
             class="cursor-pointer font-semibold text-white flex items-center justify-between"
           >
-            Are my files private and secure?
-            <i data-lucide="chevron-down" class="w-5 h-5"></i>
+            Meus arquivos são privados e seguros?<i
+              data-lucide="chevron-down"
+              class="w-5 h-5"
+            ></i>
           </summary>
           <p class="mt-3 text-gray-400">
-            Absolutely! All processing happens in your browser. Your files never
-            leave your device, ensuring complete privacy.
+            Com certeza! Todo o processamento acontece no seu navegador. Seus
+            arquivos nunca saem do seu dispositivo, garantindo total
+            privacidade.
           </p>
         </details>
         <details class="bg-gray-800 p-5 rounded-lg border border-gray-700">
           <summary
             class="cursor-pointer font-semibold text-white flex items-center justify-between"
           >
-            Is there a file size limit?
-            <i data-lucide="chevron-down" class="w-5 h-5"></i>
+            Existe limite de tamanho de arquivo?<i
+              data-lucide="chevron-down"
+              class="w-5 h-5"
+            ></i>
           </summary>
           <p class="mt-3 text-gray-400">
-            No! Process files of any size, as many times as you want, completely
-            free.
+            Não! Processe arquivos de qualquer tamanho, quantas vezes quiser, de
+            forma totalmente gratuita.
           </p>
         </details>
       </div>
@@ -435,7 +456,7 @@
       {
         "@context": "https://schema.org",
         "@type": "SoftwareApplication",
-        "name": "Add Blank Page - FastFormat",
+        "name": "Adicionar Pagina Em Branco Pdf - FastFormat",
         "applicationCategory": "PDF Tool",
         "operatingSystem": "Any - Web Browser",
         "offers": {
@@ -449,27 +470,27 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "HowTo",
-        "name": "How to add blank page online",
-        "description": "Learn how to add blank page using FastFormat",
+        "@type": "Como ",
+        "name": "Como adicionar pagina em branco pdf online",
+        "description": "Aprenda como fazer adicionar pagina em branco pdf usando o FastFormat",
         "step": [
           {
-            "@type": "HowToStep",
+            "@type": "Como Step",
             "position": 1,
-            "name": "Upload File",
-            "text": "Click or drag and drop your file"
+            "name": "Enviar Arquivo",
+            "text": "Clique ou arraste e solte seu arquivo"
           },
           {
-            "@type": "HowToStep",
+            "@type": "Como Step",
             "position": 2,
-            "name": "Process",
-            "text": "Click the process button"
+            "name": "Processar",
+            "text": "Clique no botão de processar"
           },
           {
-            "@type": "HowToStep",
+            "@type": "Como Step",
             "position": 3,
-            "name": "Download",
-            "text": "Download your processed file"
+            "name": "Baixar",
+            "text": "Baixe o seu arquivo processado"
           }
         ]
       }
@@ -489,7 +510,7 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Add Blank Page",
+            "name": "Adicionar Página em Branco",
             "item": "https://fastformat.co/pdf/adicionar-pagina-branco-pdf"
           }
         ]

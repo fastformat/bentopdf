@@ -57,7 +57,7 @@
 
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-title" content="Adjust Colors" />
+    <meta name="apple-mobile-web-app-title" content="FastFormat" />
 
     <title>Ajustar Cores de PDF Online | FastFormat</title>
     <meta
@@ -106,19 +106,20 @@
           class="flex items-center gap-2 text-indigo-400 hover:text-indigo-300 mb-6 font-semibold"
         >
           <i data-lucide="arrow-left" class="cursor-pointer"></i>
-          <span class="cursor-pointer" data-i18n="tools.backToTools">
-            Back to Tools
-          </span>
+          <span class="cursor-pointer" data-i18n="tools.backToTools"
+            >Voltar para Ferramentas</span
+          >
         </button>
 
         <h1
           class="text-2xl font-bold text-white mb-2"
           data-i18n="tools:adjustColors.name"
         >
-          Adjust Colors
+          Ajustar Cores Pdf
         </h1>
         <p class="text-gray-400 mb-6" data-i18n="tools:adjustColors.subtitle">
-          Fine-tune brightness, contrast, saturation and more in your PDF.
+          Converta, edite e processe seus arquivos de forma simples, rápida e
+          100% no navegador.
         </p>
 
         <div
@@ -132,15 +133,17 @@
             ></i>
             <p class="mb-2 text-sm text-gray-400">
               <span class="font-semibold" data-i18n="upload.clickToSelect"
-                >Click to select a file</span
+                >Clique para selecionar um arquivo</span
               >
-              <span data-i18n="upload.orDragAndDrop">or drag and drop</span>
+              <span data-i18n="upload.orarraste e solte"
+                >ou arraste e solte</span
+              >
             </p>
             <p class="text-xs text-gray-500" data-i18n="upload.hints.singlePdf">
               A single PDF file
             </p>
             <p class="text-xs text-gray-500" data-i18n="upload.filesNeverLeave">
-              Your files never leave your device.
+              Seus arquivos nunca saem do seu dispositivo.
             </p>
           </div>
           <input
@@ -177,7 +180,7 @@
                   id="reset-settings-btn"
                   class="text-xs text-gray-300 hover:text-white border border-gray-600 hover:border-gray-500 px-3 py-1 rounded-lg transition-colors"
                 >
-                  Reset
+                  Redefinir
                 </button>
               </div>
 
@@ -356,7 +359,7 @@
       >
         <div class="solid-spinner"></div>
         <p id="loader-text" class="text-white text-lg font-medium">
-          Processing...
+          Processando...
         </p>
       </div>
     </div>
@@ -373,7 +376,7 @@
           class="text-xl font-bold text-white mb-2"
           data-i18n="alert.title"
         >
-          Alert
+          Alerta
         </h3>
         <p id="alert-message" class="text-gray-300 mb-6"></p>
         <button
@@ -390,7 +393,7 @@
         class="text-2xl md:text-3xl font-bold text-white mb-8 text-center"
         data-i18n="howItWorks.title"
       >
-        How It Works
+        Como Funciona
       </h2>
       <div class="space-y-6">
         <div class="flex items-start gap-4">
@@ -400,9 +403,11 @@
             1
           </div>
           <div class="flex-1">
-            <h3 class="text-lg font-semibold text-white mb-1">Upload File</h3>
+            <h3 class="text-lg font-semibold text-white mb-1">
+              Enviar Arquivo
+            </h3>
             <p class="text-gray-400">
-              Click or drag and drop your PDF file to begin
+              Clique ou arraste e solte seu arquivo PDF para começar
             </p>
           </div>
         </div>
@@ -413,9 +418,9 @@
             2
           </div>
           <div class="flex-1">
-            <h3 class="text-lg font-semibold text-white mb-1">Adjust Colors</h3>
+            <h3 class="text-lg font-semibold text-white mb-1">Ajustar Cores</h3>
             <p class="text-gray-400">
-              Fine-tune color settings with real-time preview
+              Ajuste as configurações de cor com pré-visualização em tempo real
             </p>
           </div>
         </div>
@@ -426,8 +431,10 @@
             3
           </div>
           <div class="flex-1">
-            <h3 class="text-lg font-semibold text-white mb-1">Download</h3>
-            <p class="text-gray-400">Save your color-adjusted PDF instantly</p>
+            <h3 class="text-lg font-semibold text-white mb-1">Baixar</h3>
+            <p class="text-gray-400">
+              Salve seu PDF com as cores ajustadas instantaneamente
+            </p>
           </div>
         </div>
       </div>
@@ -438,43 +445,49 @@
         class="text-2xl md:text-3xl font-bold text-white mb-6 text-center"
         data-i18n="relatedTools.title"
       >
-        Related PDF Tools
+        Ferramentas de PDF Relacionadas
       </h2>
       <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
         <a
           href="pdf-preto-e-branco.html"
           class="block bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition-colors border border-gray-700"
         >
-          <h3 class="text-white font-semibold mb-1">PDF to Greyscale</h3>
-          <p class="text-gray-400 text-sm">Free online greyscale tool</p>
+          <h3 class="text-white font-semibold mb-1">PDF para Tons de Cinza</h3>
+          <p class="text-gray-400 text-sm">
+            Ferramenta online grátis para greyscale
+          </p>
         </a>
         <a
           href="inverter-cores-pdf.html"
           class="block bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition-colors border border-gray-700"
         >
-          <h3 class="text-white font-semibold mb-1">Invert Colors</h3>
-          <p class="text-gray-400 text-sm">Free online invert colors tool</p>
+          <h3 class="text-white font-semibold mb-1">Inverter Cores</h3>
+          <p class="text-gray-400 text-sm">
+            Ferramenta online grátis para Inverter Cores
+          </p>
         </a>
         <a
           href="efeito-scanner-pdf.html"
           class="block bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition-colors border border-gray-700"
         >
-          <h3 class="text-white font-semibold mb-1">Scanner Effect</h3>
-          <p class="text-gray-400 text-sm">Make PDFs look scanned</p>
+          <h3 class="text-white font-semibold mb-1">Efeito Scanner</h3>
+          <p class="text-gray-400 text-sm">
+            Fazer PDFs parecerem digitalizados
+          </p>
         </a>
         <a
           href="cor-de-fundo-pdf.html"
           class="block bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition-colors border border-gray-700"
         >
-          <h3 class="text-white font-semibold mb-1">Background Color</h3>
-          <p class="text-gray-400 text-sm">Change PDF background</p>
+          <h3 class="text-white font-semibold mb-1">Cor de Fundo</h3>
+          <p class="text-gray-400 text-sm">Alterar o fundo do PDF</p>
         </a>
         <a
           href="change-cor-do-texto-pdf.html"
           class="block bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition-colors border border-gray-700"
         >
-          <h3 class="text-white font-semibold mb-1">Text Color</h3>
-          <p class="text-gray-400 text-sm">Change PDF text color</p>
+          <h3 class="text-white font-semibold mb-1">Cor do Texto</h3>
+          <p class="text-gray-400 text-sm">Alterar a Cor do Texto do PDF</p>
         </a>
       </div>
     </section>
@@ -484,43 +497,48 @@
         class="text-2xl md:text-3xl font-bold text-white mb-6 text-center"
         data-i18n="faq.sectionTitle"
       >
-        Frequently Asked Questions
+        Perguntas Frequentes
       </h2>
       <div class="space-y-4">
         <details class="bg-gray-800 p-5 rounded-lg border border-gray-700">
           <summary
             class="cursor-pointer font-semibold text-white flex items-center justify-between"
           >
-            Is adjust colors really free?
+            O ajustar cores pdf é realmente grátis?
             <i data-lucide="chevron-down" class="w-5 h-5"></i>
           </summary>
           <p class="mt-3 text-gray-400">
-            Yes! FastFormat is 100% free with no hidden fees, no signup
-            required, and unlimited file processing.
+            Sim! O FastFormat é 100% grátis, sem taxas ocultas, sem necessidade
+            de cadastro e com processamento ilimitado de arquivos.
           </p>
         </details>
         <details class="bg-gray-800 p-5 rounded-lg border border-gray-700">
           <summary
             class="cursor-pointer font-semibold text-white flex items-center justify-between"
           >
-            Are my files private and secure?
-            <i data-lucide="chevron-down" class="w-5 h-5"></i>
+            Meus arquivos são privados e seguros?<i
+              data-lucide="chevron-down"
+              class="w-5 h-5"
+            ></i>
           </summary>
           <p class="mt-3 text-gray-400">
-            Absolutely! All processing happens in your browser. Your files never
-            leave your device, ensuring complete privacy.
+            Com certeza! Todo o processamento acontece no seu navegador. Seus
+            arquivos nunca saem do seu dispositivo, garantindo total
+            privacidade.
           </p>
         </details>
         <details class="bg-gray-800 p-5 rounded-lg border border-gray-700">
           <summary
             class="cursor-pointer font-semibold text-white flex items-center justify-between"
           >
-            Is there a file size limit?
-            <i data-lucide="chevron-down" class="w-5 h-5"></i>
+            Existe limite de tamanho de arquivo?<i
+              data-lucide="chevron-down"
+              class="w-5 h-5"
+            ></i>
           </summary>
           <p class="mt-3 text-gray-400">
-            No! Process files of any size, as many times as you want, completely
-            free.
+            Não! Processe arquivos de qualquer tamanho, quantas vezes quiser, de
+            forma totalmente gratuita.
           </p>
         </details>
       </div>
@@ -537,7 +555,7 @@
       {
         "@context": "https://schema.org",
         "@type": "SoftwareApplication",
-        "name": "Adjust Colors - FastFormat",
+        "name": "Ajustar Cores Pdf - FastFormat",
         "applicationCategory": "PDF Tool",
         "operatingSystem": "Any - Web Browser",
         "offers": {
@@ -551,27 +569,27 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "HowTo",
-        "name": "How to adjust PDF colors online",
-        "description": "Learn how to adjust PDF colors using FastFormat",
+        "@type": "Como ",
+        "name": "Como ajustar cores pdf online",
+        "description": "Aprenda como fazer ajustar cores pdf usando o FastFormat",
         "step": [
           {
-            "@type": "HowToStep",
+            "@type": "Como Step",
             "position": 1,
-            "name": "Upload File",
-            "text": "Click or drag and drop your PDF file"
+            "name": "Enviar Arquivo",
+            "text": "Clique ou arraste e solte seu arquivo PDF"
           },
           {
-            "@type": "HowToStep",
+            "@type": "Como Step",
             "position": 2,
-            "name": "Adjust Colors",
-            "text": "Fine-tune brightness, contrast, saturation, hue and more with live preview"
+            "name": "Ajustar Cores",
+            "text": "Ajuste brilho, contraste, saturação, matiz e mais com pré-visualização ao vivo"
           },
           {
-            "@type": "HowToStep",
+            "@type": "Como Step",
             "position": 3,
-            "name": "Download",
-            "text": "Download your color-adjusted PDF"
+            "name": "Baixar",
+            "text": "Baixe seu PDF com as cores ajustadas"
           }
         ]
       }
@@ -585,13 +603,13 @@
           {
             "@type": "ListItem",
             "position": 1,
-            "name": "Home",
+            "name": "Início",
             "item": "https://fastformat.co/pdf"
           },
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Adjust Colors",
+            "name": "Ajustar Cores",
             "item": "https://fastformat.co/pdf/ajustar-cores-pdf"
           }
         ]

@@ -56,7 +56,7 @@
     <!-- Mobile Web App -->
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-title" content="Pdf Booklet" />
+    <meta name="apple-mobile-web-app-title" content="FastFormat" />
 
     <title>Criar Livreto em PDF Online | FastFormat</title>
     <meta
@@ -107,20 +107,20 @@
           class="flex items-center gap-2 text-indigo-400 hover:text-indigo-300 mb-6 font-semibold"
         >
           <i data-lucide="arrow-left" class="cursor-pointer"></i>
-          <span class="cursor-pointer" data-i18n="tools.backToTools">
-            Back to Tools
-          </span>
+          <span class="cursor-pointer" data-i18n="tools.backToTools"
+            >Voltar para Ferramentas</span
+          >
         </button>
 
         <h1
           class="text-2xl font-bold text-white mb-2"
           data-i18n="tools:pdfBooklet.name"
         >
-          PDF Booklet
+          Booklet Pdf
         </h1>
         <p class="text-gray-400 mb-6" data-i18n="tools:pdfBooklet.subtitle">
-          Rearrange pages for double-sided booklet printing. Fold and staple to
-          create a booklet.
+          Converta, edite e processe seus arquivos de forma simples, rápida e
+          100% no navegador.
         </p>
 
         <div
@@ -134,15 +134,17 @@
             ></i>
             <p class="mb-2 text-sm text-gray-400">
               <span class="font-semibold" data-i18n="upload.clickToSelect"
-                >Click to select a file</span
+                >Clique para selecionar um arquivo</span
               >
-              <span data-i18n="upload.orDragAndDrop">or drag and drop</span>
+              <span data-i18n="upload.orarraste e solte"
+                >ou arraste e solte</span
+              >
             </p>
             <p class="text-xs text-gray-500" data-i18n="upload.hints.singlePdf">
               A single PDF file
             </p>
             <p class="text-xs text-gray-500" data-i18n="upload.filesNeverLeave">
-              Your files never leave your device.
+              Seus arquivos nunca saem do seu dispositivo.
             </p>
           </div>
           <input
@@ -159,7 +161,7 @@
           <div class="p-3 bg-gray-900 rounded-lg border border-gray-700 mb-4">
             <p class="text-sm text-gray-300">
               <strong class="text-white" data-i18n="tools:pdfBooklet.howItWorks"
-                >How it works:</strong
+                >Como funciona:</strong
               >
             </p>
             <ul
@@ -167,7 +169,7 @@
             >
               <li data-i18n="tools:pdfBooklet.step1">Upload a PDF file.</li>
               <li data-i18n="tools:pdfBooklet.step2">
-                Pages will be rearranged in booklet order.
+                As páginas serão reorganizadas na ordem de livreto.
               </li>
               <li data-i18n="tools:pdfBooklet.step3">
                 Print double-sided, flip on short edge, fold and staple.
@@ -178,7 +180,7 @@
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
             <div class="bg-gray-900 rounded-lg border border-gray-700 p-4">
               <label class="block mb-3 text-sm font-medium text-white"
-                >Source Rotation</label
+                >Rotação da Origem</label
               >
               <div class="space-y-2">
                 <label
@@ -191,7 +193,7 @@
                     checked
                     class="w-4 h-4 text-indigo-600 bg-gray-700 border-gray-600"
                   />
-                  <span>No rotation</span>
+                  <span>Sem rotação</span>
                 </label>
                 <label
                   class="flex items-center gap-2 cursor-pointer text-sm text-gray-300"
@@ -202,7 +204,7 @@
                     value="90cw"
                     class="w-4 h-4 text-indigo-600 bg-gray-700 border-gray-600"
                   />
-                  <span>Rotate clockwise (90°)</span>
+                  <span>Girar no sentido horário (90°)</span>
                 </label>
                 <label
                   class="flex items-center gap-2 cursor-pointer text-sm text-gray-300"
@@ -213,7 +215,7 @@
                     value="90ccw"
                     class="w-4 h-4 text-indigo-600 bg-gray-700 border-gray-600"
                   />
-                  <span>Rotate counter-clockwise (90°)</span>
+                  <span>Girar no sentido anti-horário (90°)</span>
                 </label>
                 <label
                   class="flex items-center gap-2 cursor-pointer text-sm text-gray-300"
@@ -224,7 +226,7 @@
                     value="alternate"
                     class="w-4 h-4 text-indigo-600 bg-gray-700 border-gray-600"
                   />
-                  <span>Alternate (odd→CW, even→CCW)</span>
+                  <span>Alternar (ímpar→horário, par→anti-horário)</span>
                 </label>
               </div>
             </div>
@@ -241,7 +243,7 @@
                   id="paper-size"
                   class="w-full bg-gray-700 border border-gray-600 text-white rounded-lg p-2"
                 >
-                  <optgroup label="US Sizes">
+                  <optgroup label="Tamanhos (EUA)">
                     <option value="Letter" selected>Letter (8.5" × 11")</option>
                     <option value="Legal">Legal (8.5" × 14")</option>
                     <option value="Tabloid">Tabloid (11" × 17")</option>
@@ -249,7 +251,7 @@
                     <option value="Executive">Executive (7.25" × 10.5")</option>
                     <option value="Folio">Folio (8.5" × 13")</option>
                   </optgroup>
-                  <optgroup label="A Series (ISO 216)">
+                  <optgroup label="Série A (ISO 216)">
                     <option value="4A0">4A0 (1682 × 2378 mm)</option>
                     <option value="2A0">2A0 (1189 × 1682 mm)</option>
                     <option value="A0">A0 (841 × 1189 mm)</option>
@@ -260,7 +262,7 @@
                     <option value="A5">A5 (148 × 210 mm)</option>
                     <option value="A6">A6 (105 × 148 mm)</option>
                   </optgroup>
-                  <optgroup label="B Series (ISO 216)">
+                  <optgroup label="Série B (ISO 216)">
                     <option value="B0">B0 (1000 × 1414 mm)</option>
                     <option value="B1">B1 (707 × 1000 mm)</option>
                     <option value="B2">B2 (500 × 707 mm)</option>
@@ -268,7 +270,7 @@
                     <option value="B4">B4 (250 × 353 mm)</option>
                     <option value="B5">B5 (176 × 250 mm)</option>
                   </optgroup>
-                  <optgroup label="C Series (Envelopes)">
+                  <optgroup label="Série C (Envelopes)">
                     <option value="C0">C0 (917 × 1297 mm)</option>
                     <option value="C1">C1 (648 × 917 mm)</option>
                     <option value="C2">C2 (458 × 648 mm)</option>
@@ -282,7 +284,7 @@
               </div>
 
               <label class="block mb-3 text-sm font-medium text-white"
-                >Grid Mode</label
+                >Modo de Grade</label
               >
               <div class="space-y-2">
                 <label
@@ -295,7 +297,7 @@
                     checked
                     class="w-4 h-4 text-indigo-600 bg-gray-700 border-gray-600"
                   />
-                  <span>1×2 (Booklet)</span>
+                  <span>1×2 (Livreto)</span>
                 </label>
                 <label
                   class="flex items-center gap-2 cursor-pointer text-sm text-gray-300"
@@ -333,7 +335,7 @@
               </div>
 
               <label class="block mt-4 mb-3 text-sm font-medium text-white"
-                >Orientation</label
+                >Orientação</label
               >
               <div class="space-y-2">
                 <label
@@ -346,7 +348,7 @@
                     checked
                     class="w-4 h-4 text-indigo-600 bg-gray-700 border-gray-600"
                   />
-                  <span>Auto (best for layout)</span>
+                  <span>Automático (melhor para o layout)</span>
                 </label>
                 <label
                   class="flex items-center gap-2 cursor-pointer text-sm text-gray-300"
@@ -357,7 +359,7 @@
                     value="portrait"
                     class="w-4 h-4 text-indigo-600 bg-gray-700 border-gray-600"
                   />
-                  <span>Portrait</span>
+                  <span>Retrato</span>
                 </label>
                 <label
                   class="flex items-center gap-2 cursor-pointer text-sm text-gray-300"
@@ -368,7 +370,7 @@
                     value="landscape"
                     class="w-4 h-4 text-indigo-600 bg-gray-700 border-gray-600"
                   />
-                  <span>Landscape</span>
+                  <span>Paisagem</span>
                 </label>
               </div>
             </div>
@@ -381,7 +383,7 @@
               disabled
             >
               <i data-lucide="eye" class="w-4 h-4 inline-block mr-2"></i>
-              Generate Preview
+              Gerar Prévia
             </button>
             <button
               id="download-btn"
@@ -389,7 +391,7 @@
               disabled
               data-i18n="tools:pdfBooklet.createBooklet"
             >
-              <i data-lucide="download" class="w-4 h-4 inline-block mr-2"></i>
+              <i data-lucide="Baixar" class="w-4 h-4 inline-block mr-2"></i>
               Create Booklet
             </button>
           </div>
@@ -399,8 +401,8 @@
             class="bg-gray-900 rounded-lg border border-gray-700 p-4 min-h-[200px] overflow-auto"
           >
             <p class="text-gray-400 text-center py-8">
-              Upload a PDF and click "Generate Preview" to see the booklet
-              layout
+              Envie um PDF e clique em "Gerar Prévia" para ver o layout do
+              livreto
             </p>
           </div>
         </div>
@@ -420,7 +422,7 @@
           class="text-white text-lg font-medium"
           data-i18n="tools:pdfBooklet.processing"
         >
-          Processing...
+          Processando...
         </p>
       </div>
     </div>
@@ -437,7 +439,7 @@
           class="text-xl font-bold text-white mb-2"
           data-i18n="alert.title"
         >
-          Alert
+          Alerta
         </h3>
         <p id="alert-message" class="text-gray-300 mb-6"></p>
         <button
@@ -449,13 +451,13 @@
       </div>
     </div>
 
-    <!-- How It Works Section -->
+    <!-- Seção Como Funciona -->
     <section class="max-w-4xl mx-auto px-4 py-12">
       <h2
         class="text-2xl md:text-3xl font-bold text-white mb-8 text-center"
         data-i18n="howItWorks.title"
       >
-        How It Works
+        Como Funciona
       </h2>
       <div class="space-y-6">
         <div class="flex items-start gap-4">
@@ -465,9 +467,11 @@
             1
           </div>
           <div class="flex-1">
-            <h3 class="text-lg font-semibold text-white mb-1">Upload File</h3>
+            <h3 class="text-lg font-semibold text-white mb-1">
+              Enviar Arquivo
+            </h3>
             <p class="text-gray-400" data-i18n="howItWorks.step1">
-              Click or drag and drop your file to begin
+              Clique ou arraste e solte seu arquivo para começar
             </p>
           </div>
         </div>
@@ -478,9 +482,9 @@
             2
           </div>
           <div class="flex-1">
-            <h3 class="text-lg font-semibold text-white mb-1">Process</h3>
+            <h3 class="text-lg font-semibold text-white mb-1">Processar</h3>
             <p class="text-gray-400" data-i18n="howItWorks.step2">
-              Click the process button to start
+              Clique no botão de processar para começar
             </p>
           </div>
         </div>
@@ -491,9 +495,9 @@
             3
           </div>
           <div class="flex-1">
-            <h3 class="text-lg font-semibold text-white mb-1">Download</h3>
+            <h3 class="text-lg font-semibold text-white mb-1">Baixar</h3>
             <p class="text-gray-400" data-i18n="howItWorks.step3">
-              Save your processed file instantly
+              Salve seu arquivo processado instantaneamente
             </p>
           </div>
         </div>
@@ -506,43 +510,53 @@
         class="text-2xl md:text-3xl font-bold text-white mb-6 text-center"
         data-i18n="relatedTools.title"
       >
-        Related PDF Tools
+        Ferramentas de PDF Relacionadas
       </h2>
       <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
         <a
           href="juntar-pdf.html"
           class="block bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition-colors border border-gray-700"
         >
-          <h3 class="text-white font-semibold mb-1">Merge Pdf</h3>
-          <p class="text-gray-400 text-sm">Free online merge pdf tool</p>
+          <h3 class="text-white font-semibold mb-1">Juntar PDF</h3>
+          <p class="text-gray-400 text-sm">
+            Ferramenta online gratuita para juntar PDF
+          </p>
         </a>
         <a
           href="comprimir-pdf.html"
           class="block bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition-colors border border-gray-700"
         >
-          <h3 class="text-white font-semibold mb-1">Compress Pdf</h3>
-          <p class="text-gray-400 text-sm">Free online compress pdf tool</p>
+          <h3 class="text-white font-semibold mb-1">Comprimir PDF</h3>
+          <p class="text-gray-400 text-sm">
+            Ferramenta online gratuita para comprimir PDF
+          </p>
         </a>
         <a
           href="dividir-pdf.html"
           class="block bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition-colors border border-gray-700"
         >
-          <h3 class="text-white font-semibold mb-1">Split Pdf</h3>
-          <p class="text-gray-400 text-sm">Free online split pdf tool</p>
+          <h3 class="text-white font-semibold mb-1">Dividir PDF</h3>
+          <p class="text-gray-400 text-sm">
+            Ferramenta online gratuita para dividir PDF
+          </p>
         </a>
         <a
           href="editar-pdf.html"
           class="block bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition-colors border border-gray-700"
         >
-          <h3 class="text-white font-semibold mb-1">Edit Pdf</h3>
-          <p class="text-gray-400 text-sm">Free online edit pdf tool</p>
+          <h3 class="text-white font-semibold mb-1">Editar PDF</h3>
+          <p class="text-gray-400 text-sm">
+            Ferramenta online gratuita para editar PDF
+          </p>
         </a>
         <a
           href="girar-pdf.html"
           class="block bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition-colors border border-gray-700"
         >
-          <h3 class="text-white font-semibold mb-1">Rotate Pdf</h3>
-          <p class="text-gray-400 text-sm">Free online rotate pdf tool</p>
+          <h3 class="text-white font-semibold mb-1">Girar PDF</h3>
+          <p class="text-gray-400 text-sm">
+            Ferramenta online gratuita para girar PDF
+          </p>
         </a>
       </div>
     </section>
@@ -553,43 +567,48 @@
         class="text-2xl md:text-3xl font-bold text-white mb-6 text-center"
         data-i18n="faq.sectionTitle"
       >
-        Frequently Asked Questions
+        Perguntas Frequentes
       </h2>
       <div class="space-y-4">
         <details class="bg-gray-800 p-5 rounded-lg border border-gray-700">
           <summary
             class="cursor-pointer font-semibold text-white flex items-center justify-between"
           >
-            Is pdf booklet really free?
+            O booklet pdf é realmente grátis?
             <i data-lucide="chevron-down" class="w-5 h-5"></i>
           </summary>
           <p class="mt-3 text-gray-400">
-            Yes! FastFormat is 100% free with no hidden fees, no signup
-            required, and unlimited file processing.
+            Sim! O FastFormat é 100% grátis, sem taxas ocultas, sem necessidade
+            de cadastro e com processamento ilimitado de arquivos.
           </p>
         </details>
         <details class="bg-gray-800 p-5 rounded-lg border border-gray-700">
           <summary
             class="cursor-pointer font-semibold text-white flex items-center justify-between"
           >
-            Are my files private and secure?
-            <i data-lucide="chevron-down" class="w-5 h-5"></i>
+            Meus arquivos são privados e seguros?<i
+              data-lucide="chevron-down"
+              class="w-5 h-5"
+            ></i>
           </summary>
           <p class="mt-3 text-gray-400">
-            Absolutely! All processing happens in your browser. Your files never
-            leave your device, ensuring complete privacy.
+            Com certeza! Todo o processamento acontece no seu navegador. Seus
+            arquivos nunca saem do seu dispositivo, garantindo total
+            privacidade.
           </p>
         </details>
         <details class="bg-gray-800 p-5 rounded-lg border border-gray-700">
           <summary
             class="cursor-pointer font-semibold text-white flex items-center justify-between"
           >
-            Is there a file size limit?
-            <i data-lucide="chevron-down" class="w-5 h-5"></i>
+            Existe limite de tamanho de arquivo?<i
+              data-lucide="chevron-down"
+              class="w-5 h-5"
+            ></i>
           </summary>
           <p class="mt-3 text-gray-400">
-            No! Process files of any size, as many times as you want, completely
-            free.
+            Não! Processe arquivos de qualquer tamanho, quantas vezes quiser, de
+            forma totalmente gratuita.
           </p>
         </details>
       </div>
@@ -607,9 +626,9 @@
       {
         "@context": "https://schema.org",
         "@type": "SoftwareApplication",
-        "name": "Pdf Booklet - FastFormat",
-        "applicationCategory": "PDF Tool",
-        "operatingSystem": "Any - Web Browser",
+        "name": "Livreto PDF - FastFormat",
+        "applicationCategory": "Ferramenta de PDF",
+        "operatingSystem": "Qualquer - Navegador Web",
         "offers": {
           "@type": "Offer",
           "price": "0",
@@ -621,27 +640,27 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "HowTo",
-        "name": "How to pdf booklet online",
-        "description": "Learn how to pdf booklet using FastFormat",
+        "@type": "Como ",
+        "name": "Como booklet pdf online",
+        "description": "Aprenda como fazer booklet pdf usando o FastFormat",
         "step": [
           {
-            "@type": "HowToStep",
+            "@type": "Como Step",
             "position": 1,
-            "name": "Upload File",
-            "text": "Click or drag and drop your file"
+            "name": "Enviar Arquivo",
+            "text": "Clique ou arraste e solte seu arquivo"
           },
           {
-            "@type": "HowToStep",
+            "@type": "Como Step",
             "position": 2,
-            "name": "Process",
-            "text": "Click the process button"
+            "name": "Processar",
+            "text": "Clique no botão de processar"
           },
           {
-            "@type": "HowToStep",
+            "@type": "Como Step",
             "position": 3,
-            "name": "Download",
-            "text": "Download your processed file"
+            "name": "Baixar",
+            "text": "Baixe o seu arquivo processado"
           }
         ]
       }
@@ -655,13 +674,13 @@
           {
             "@type": "ListItem",
             "position": 1,
-            "name": "Home",
+            "name": "Início",
             "item": "https://fastformat.co/pdf"
           },
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Pdf Booklet",
+            "name": "Livreto PDF",
             "item": "https://fastformat.co/pdf/livreto-pdf"
           }
         ]

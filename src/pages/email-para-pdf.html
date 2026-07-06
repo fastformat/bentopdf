@@ -62,7 +62,7 @@
     <!-- Mobile Web App -->
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-title" content="Email to PDF" />
+    <meta name="apple-mobile-web-app-title" content="FastFormat" />
 
     <title>E-mail para PDF Grátis Online | FastFormat</title>
     <meta
@@ -113,20 +113,20 @@
           class="flex items-center gap-2 text-indigo-400 hover:text-indigo-300 mb-6 font-semibold"
         >
           <i data-lucide="arrow-left" class="cursor-pointer"></i>
-          <span class="cursor-pointer" data-i18n="tools.backToTools">
-            Back to Tools
-          </span>
+          <span class="cursor-pointer" data-i18n="tools.backToTools"
+            >Voltar para Ferramentas</span
+          >
         </button>
 
         <h1
           class="text-2xl font-bold text-white mb-2"
           data-i18n="tools:emailToPdf.name"
         >
-          Email to PDF
+          Email Para Pdf
         </h1>
         <p class="text-gray-400 mb-6" data-i18n="tools:emailToPdf.subtitle">
-          Convert email files (EML, MSG) to PDF format. Supports Outlook exports
-          and standard email formats.
+          Converta, edite e processe seus arquivos de forma simples, rápida e
+          100% no navegador.
         </p>
 
         <div
@@ -140,9 +140,11 @@
             ></i>
             <p class="mb-2 text-sm text-gray-400">
               <span class="font-semibold" data-i18n="upload.clickToSelect"
-                >Click to select files</span
+                >Clique para selecionar um arquivo</span
               >
-              <span data-i18n="upload.orDragAndDrop">or drag and drop</span>
+              <span data-i18n="upload.orarraste e solte"
+                >ou arraste e solte</span
+              >
             </p>
             <p
               class="text-xs text-gray-500"
@@ -151,7 +153,7 @@
               EML, MSG files
             </p>
             <p class="text-xs text-gray-500" data-i18n="upload.filesNeverLeave">
-              Your files never leave your device.
+              Seus arquivos nunca saem do seu dispositivo.
             </p>
           </div>
           <input
@@ -169,14 +171,14 @@
             class="btn bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-4 py-2 rounded-lg flex items-center gap-2"
           >
             <i data-lucide="plus"></i>
-            <span data-i18n="upload.addMore">Add More Files</span>
+            <span data-i18n="upload.addMore">Adicionar Mais Arquivos</span>
           </button>
           <button
             id="clear-files-btn"
             class="btn bg-gray-700 hover:bg-gray-600 text-white font-semibold px-4 py-2 rounded-lg flex items-center gap-2"
           >
             <i data-lucide="trash-2"></i>
-            <span data-i18n="upload.clearAll">Clear All</span>
+            <span data-i18n="upload.clearAll">Limpar Tudo</span>
           </button>
         </div>
 
@@ -188,13 +190,13 @@
             <h3
               class="text-sm font-semibold text-gray-300 uppercase tracking-wide"
             >
-              Conversion Options
+              Opções de Conversão
             </h3>
 
             <!-- Page Size -->
             <div class="flex items-center justify-between">
               <label for="page-size" class="text-gray-300 text-sm"
-                >Page Size</label
+                >Tamanho da Página</label
               >
               <select
                 id="page-size"
@@ -215,7 +217,7 @@
                 class="w-4 h-4 text-indigo-600 bg-gray-700 border-gray-600 rounded focus:ring-indigo-500"
               />
               <label for="include-cc-bcc" class="ml-3 text-gray-300 text-sm"
-                >Include CC and BCC recipients in header</label
+                >Incluir destinatários CC e BCC no cabeçalho</label
               >
             </div>
 
@@ -230,7 +232,7 @@
               <label
                 for="include-attachments"
                 class="ml-3 text-gray-300 text-sm"
-                >Include email attachments list</label
+                >Incluir lista de anexos do e-mail</label
               >
             </div>
           </div>
@@ -240,7 +242,7 @@
             class="btn-gradient w-full"
             data-i18n="tools:emailToPdf.convertButton"
           >
-            Convert to PDF
+            Converter para PDF
           </button>
         </div>
       </div>
@@ -255,7 +257,7 @@
       >
         <div class="solid-spinner"></div>
         <p id="loader-text" class="text-white text-lg font-medium">
-          Processing...
+          Processando...
         </p>
       </div>
     </div>
@@ -272,7 +274,7 @@
           class="text-xl font-bold text-white mb-2"
           data-i18n="alert.title"
         >
-          Alert
+          Alerta
         </h3>
         <p id="alert-message" class="text-gray-300 mb-6"></p>
         <button
@@ -284,13 +286,13 @@
       </div>
     </div>
 
-    <!-- How It Works Section -->
+    <!-- Seção Como Funciona -->
     <section class="max-w-4xl mx-auto px-4 py-12">
       <h2
         class="text-2xl md:text-3xl font-bold text-white mb-8 text-center"
         data-i18n="howItWorks.title"
       >
-        How It Works
+        Como Funciona
       </h2>
       <div class="space-y-6">
         <div class="flex items-start gap-4">
@@ -301,10 +303,10 @@
           </div>
           <div class="flex-1">
             <h3 class="text-lg font-semibold text-white mb-1">
-              Upload Email File
+              Enviar Arquivo de Email
             </h3>
             <p class="text-gray-400">
-              Click or drag and drop your .eml or .msg file to begin
+              Clique ou arraste e solte seu arquivo .eml ou .msg para começar
             </p>
           </div>
         </div>
@@ -315,9 +317,9 @@
             2
           </div>
           <div class="flex-1">
-            <h3 class="text-lg font-semibold text-white mb-1">Process</h3>
+            <h3 class="text-lg font-semibold text-white mb-1">Processar</h3>
             <p class="text-gray-400">
-              Click the convert button to generate your PDF
+              Clique no botão de converter para gerar seu PDF
             </p>
           </div>
         </div>
@@ -328,8 +330,10 @@
             3
           </div>
           <div class="flex-1">
-            <h3 class="text-lg font-semibold text-white mb-1">Download</h3>
-            <p class="text-gray-400">Save your converted PDF file instantly</p>
+            <h3 class="text-lg font-semibold text-white mb-1">Baixar</h3>
+            <p class="text-gray-400">
+              Salve seu arquivo PDF convertido instantaneamente
+            </p>
           </div>
         </div>
       </div>
@@ -341,43 +345,53 @@
         class="text-2xl md:text-3xl font-bold text-white mb-6 text-center"
         data-i18n="relatedTools.title"
       >
-        Related PDF Tools
+        Ferramentas de PDF Relacionadas
       </h2>
       <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
         <a
           href="juntar-pdf.html"
           class="block bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition-colors border border-gray-700"
         >
-          <h3 class="text-white font-semibold mb-1">Merge PDF</h3>
-          <p class="text-gray-400 text-sm">Free online merge pdf tool</p>
+          <h3 class="text-white font-semibold mb-1">Juntar PDF</h3>
+          <p class="text-gray-400 text-sm">
+            Ferramenta online gratuita para juntar PDF
+          </p>
         </a>
         <a
           href="word-para-pdf.html"
           class="block bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition-colors border border-gray-700"
         >
-          <h3 class="text-white font-semibold mb-1">Word to PDF</h3>
-          <p class="text-gray-400 text-sm">Convert Word documents to PDF</p>
+          <h3 class="text-white font-semibold mb-1">Word para PDF</h3>
+          <p class="text-gray-400 text-sm">
+            Ferramenta online gratuita para converter Word para PDF
+          </p>
         </a>
         <a
           href="comprimir-pdf.html"
           class="block bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition-colors border border-gray-700"
         >
-          <h3 class="text-white font-semibold mb-1">Compress PDF</h3>
-          <p class="text-gray-400 text-sm">Free online compress pdf tool</p>
+          <h3 class="text-white font-semibold mb-1">Comprimir PDF</h3>
+          <p class="text-gray-400 text-sm">
+            Ferramenta online gratuita para comprimir PDF
+          </p>
         </a>
         <a
           href="txt-para-pdf.html"
           class="block bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition-colors border border-gray-700"
         >
-          <h3 class="text-white font-semibold mb-1">Text to PDF</h3>
-          <p class="text-gray-400 text-sm">Convert text files to PDF</p>
+          <h3 class="text-white font-semibold mb-1">Texto para PDF</h3>
+          <p class="text-gray-400 text-sm">
+            Ferramenta online gratuita para converter texto para PDF
+          </p>
         </a>
         <a
           href="editar-pdf.html"
           class="block bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition-colors border border-gray-700"
         >
-          <h3 class="text-white font-semibold mb-1">Edit PDF</h3>
-          <p class="text-gray-400 text-sm">Free online edit pdf tool</p>
+          <h3 class="text-white font-semibold mb-1">Editar PDF</h3>
+          <p class="text-gray-400 text-sm">
+            Ferramenta online gratuita para editar PDF
+          </p>
         </a>
       </div>
     </section>
@@ -388,58 +402,58 @@
         class="text-2xl md:text-3xl font-bold text-white mb-6 text-center"
         data-i18n="faq.sectionTitle"
       >
-        Frequently Asked Questions
+        Perguntas Frequentes
       </h2>
       <div class="space-y-4">
         <details class="bg-gray-800 p-5 rounded-lg border border-gray-700">
           <summary
             class="cursor-pointer font-semibold text-white flex items-center justify-between"
           >
-            What email formats are supported?
+            Quais formatos de e-mail são suportados?
             <i data-lucide="chevron-down" class="w-5 h-5"></i>
           </summary>
           <p class="mt-3 text-gray-400">
-            FastFormat supports both .eml (standard email format) and .msg
-            (Microsoft Outlook) files. These are the most common formats for
-            exported or saved emails.
+            O FastFormat suporta arquivos .eml (formato de e-mail padrão) e .msg
+            (Microsoft Outlook). Esses são os formatos mais comuns para e-mails
+            exportados ou salvos.
           </p>
         </details>
         <details class="bg-gray-800 p-5 rounded-lg border border-gray-700">
           <summary
             class="cursor-pointer font-semibold text-white flex items-center justify-between"
           >
-            Is email to PDF conversion really free?
+            O email para pdf é realmente grátis?
             <i data-lucide="chevron-down" class="w-5 h-5"></i>
           </summary>
           <p class="mt-3 text-gray-400">
-            Yes! FastFormat is 100% free with no hidden fees, no signup
-            required, and unlimited file processing.
+            Sim! O FastFormat é 100% grátis, sem taxas ocultas, sem necessidade
+            de cadastro e com processamento ilimitado de arquivos.
           </p>
         </details>
         <details class="bg-gray-800 p-5 rounded-lg border border-gray-700">
           <summary
             class="cursor-pointer font-semibold text-white flex items-center justify-between"
           >
-            Are my emails kept private?
+            Meus e-mails permanecem privados?
             <i data-lucide="chevron-down" class="w-5 h-5"></i>
           </summary>
           <p class="mt-3 text-gray-400">
-            Absolutely! All processing happens in your browser. Your email files
-            never leave your device, ensuring complete privacy for sensitive
-            communications.
+            Com certeza! Todo o processamento acontece no seu navegador. Seus
+            arquivos de e-mail nunca saem do seu dispositivo, garantindo total
+            privacidade para comunicações sensíveis.
           </p>
         </details>
         <details class="bg-gray-800 p-5 rounded-lg border border-gray-700">
           <summary
             class="cursor-pointer font-semibold text-white flex items-center justify-between"
           >
-            What about email attachments?
+            E quanto aos anexos do e-mail?
             <i data-lucide="chevron-down" class="w-5 h-5"></i>
           </summary>
           <p class="mt-3 text-gray-400">
-            The PDF displays a list of attachments at the bottom and also embeds
-            the actual files into the PDF. You can access them via the
-            Attachments panel in PDF readers like Adobe Reader or Foxit.
+            O PDF exibe uma lista de anexos no rodapé e também incorpora os
+            arquivos originais dentro do PDF. Você pode acessá-los pelo painel
+            de Anexos em leitores de PDF como Adobe Reader ou Foxit.
           </p>
         </details>
       </div>
@@ -457,7 +471,7 @@
       {
         "@context": "https://schema.org",
         "@type": "SoftwareApplication",
-        "name": "Email to PDF - FastFormat",
+        "name": "Email Para Pdf - FastFormat",
         "applicationCategory": "PDF Tool",
         "operatingSystem": "Any - Web Browser",
         "offers": {
@@ -471,27 +485,27 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "HowTo",
-        "name": "How to convert email to PDF online",
-        "description": "Learn how to convert email files to PDF using FastFormat",
+        "@type": "Como ",
+        "name": "Como email para pdf online",
+        "description": "Aprenda como fazer email para pdf usando o FastFormat",
         "step": [
           {
-            "@type": "HowToStep",
+            "@type": "Como Step",
             "position": 1,
-            "name": "Upload Email File",
-            "text": "Click or drag and drop your .eml or .msg file"
+            "name": "Enviar Arquivo de Email",
+            "text": "Clique ou arraste e solte seu arquivo .eml ou .msg"
           },
           {
-            "@type": "HowToStep",
+            "@type": "Como Step",
             "position": 2,
-            "name": "Process",
-            "text": "Click the convert button"
+            "name": "Processar",
+            "text": "Clique no botão de converter"
           },
           {
-            "@type": "HowToStep",
+            "@type": "Como Step",
             "position": 3,
-            "name": "Download",
-            "text": "Download your converted PDF file"
+            "name": "Baixar",
+            "text": "Baixe seu arquivo PDF convertido"
           }
         ]
       }
@@ -505,13 +519,13 @@
           {
             "@type": "ListItem",
             "position": 1,
-            "name": "Home",
+            "name": "Início",
             "item": "https://fastformat.co/pdf"
           },
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Email to PDF",
+            "name": "E-mail para PDF",
             "item": "https://fastformat.co/pdf/email-para-pdf"
           }
         ]
