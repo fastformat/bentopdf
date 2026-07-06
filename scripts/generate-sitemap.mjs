@@ -48,7 +48,7 @@ function getPriority(pageName) {
 function buildUrl(lang, pageName) {
   const pagePath = pageName === 'index' ? '' : pageName;
   if (lang === 'en') {
-    return pagePath ? `${SITE_URL}/${pagePath}` : SITE_URL;
+    return pagePath ? `${SITE_URL}/${pagePath}` : `${SITE_URL}/`;
   }
   return pagePath ? `${SITE_URL}/${lang}/${pagePath}` : `${SITE_URL}/${lang}`;
 }

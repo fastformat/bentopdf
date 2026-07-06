@@ -56,7 +56,7 @@
         "applicationCategory": "UtilitiesApplication",
         "operatingSystem": "Web",
         "url": "https://fastformat.co/pdf/",
-        "description": "Ferramentas gratuitas para juntar PDF, comprimir PDF, converter PDF em Word, converter Word para PDF e editar PDF no navegador.",
+        "description": "Ferramentas gratuitas para juntar PDF, dividir PDF, comprimir PDF, converter PDF em Word, converter Word para PDF, transformar imagem em PDF e editar PDF no navegador.",
         "offers": {
           "@type": "Offer",
           "price": "0",
@@ -75,6 +75,11 @@
           },
           {
             "@type": "WebPage",
+            "name": "Dividir PDF",
+            "url": "https://fastformat.co/pdf/dividir-pdf"
+          },
+          {
+            "@type": "WebPage",
             "name": "PDF para Word",
             "url": "https://fastformat.co/pdf/pdf-para-word"
           },
@@ -82,6 +87,11 @@
             "@type": "WebPage",
             "name": "Word para PDF",
             "url": "https://fastformat.co/pdf/word-para-pdf"
+          },
+          {
+            "@type": "WebPage",
+            "name": "JPG para PDF",
+            "url": "https://fastformat.co/pdf/jpg-para-pdf"
           },
           {
             "@type": "WebPage",
@@ -204,7 +214,7 @@
               </h2>
               <p class="mt-1 text-sm text-gray-400">
                 Atalhos para as tarefas com maior procura: juntar, comprimir,
-                converter e editar PDF.
+                dividir, converter e editar PDF.
               </p>
             </div>
             <a
@@ -217,7 +227,7 @@
           </div>
 
           <div
-            class="mt-5 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-5"
+            class="mt-5 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-7"
           >
             <a
               href="{{baseUrl}}juntar-pdf"
@@ -238,6 +248,15 @@
               </p>
             </a>
             <a
+              href="{{baseUrl}}dividir-pdf"
+              class="rounded-lg border border-gray-700 bg-gray-900 p-4 text-left transition-colors hover:border-indigo-500 hover:bg-gray-800"
+            >
+              <h3 class="font-semibold text-white">Dividir PDF</h3>
+              <p class="mt-1 text-sm text-gray-400">
+                Separe páginas ou extraia partes do documento.
+              </p>
+            </a>
+            <a
               href="{{baseUrl}}pdf-para-word"
               class="rounded-lg border border-gray-700 bg-gray-900 p-4 text-left transition-colors hover:border-indigo-500 hover:bg-gray-800"
             >
@@ -253,6 +272,15 @@
               <h3 class="font-semibold text-white">Word para PDF</h3>
               <p class="mt-1 text-sm text-gray-400">
                 Transforme DOCX em PDF antes da entrega.
+              </p>
+            </a>
+            <a
+              href="{{baseUrl}}jpg-para-pdf"
+              class="rounded-lg border border-gray-700 bg-gray-900 p-4 text-left transition-colors hover:border-indigo-500 hover:bg-gray-800"
+            >
+              <h3 class="font-semibold text-white">JPG para PDF</h3>
+              <p class="mt-1 text-sm text-gray-400">
+                Transforme imagens em PDF rapidamente.
               </p>
             </a>
             <a
