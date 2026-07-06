@@ -112,7 +112,9 @@
                 >ou arraste e solte</span
               >
             </p>
-            <p class="text-xs text-gray-500">PDF files (multiple supported)</p>
+            <p class="text-xs text-gray-500">
+              Arquivos PDF (vários suportados)
+            </p>
             <p class="text-xs text-gray-500" data-i18n="upload.filesNeverLeave">
               Seus arquivos nunca saem do seu dispositivo.
             </p>
@@ -150,41 +152,49 @@
             <label
               for="style-preset"
               class="block mb-2 text-sm font-medium text-gray-300"
-              >Select Style</label
+              >Selecionar Estilo</label
             >
             <select
               id="style-preset"
               class="w-full bg-gray-700 border border-gray-600 text-white rounded-lg p-2.5 focus:ring-indigo-500 focus:border-indigo-500"
             >
-              <optgroup label="Exhibit + Case + Bates + Page">
-                <option value="full-6">Exhibit 1 Case XYZ 000001 Page 1</option>
-                <option value="full-5">Exhibit 1 Case XYZ 00001 Page 1</option>
-                <option value="full-4">Exhibit 1 Case XYZ 0001 Page 1</option>
-                <option value="full-3">Exhibit 1 Case XYZ 001 Page 1</option>
-                <option value="full-0">Exhibit 1 Case XYZ 1 Page 1</option>
+              <optgroup label="Anexo + Processo + Bates + Página">
+                <option value="full-6">
+                  Anexo 1 Processo XYZ 000001 Página 1
+                </option>
+                <option value="full-5">
+                  Anexo 1 Processo XYZ 00001 Página 1
+                </option>
+                <option value="full-4">
+                  Anexo 1 Processo XYZ 0001 Página 1
+                </option>
+                <option value="full-3">
+                  Anexo 1 Processo XYZ 001 Página 1
+                </option>
+                <option value="full-0">Anexo 1 Processo XYZ 1 Página 1</option>
               </optgroup>
-              <optgroup label="Exhibit + Case + Bates">
-                <option value="no-page-6">Exhibit 1 Case XYZ 000001</option>
-                <option value="no-page-5">Exhibit 1 Case XYZ 00001</option>
-                <option value="no-page-4">Exhibit 1 Case XYZ 0001</option>
-                <option value="no-page-3">Exhibit 1 Case XYZ 001</option>
-                <option value="no-page-0">Exhibit 1 Case XYZ 1</option>
+              <optgroup label="Anexo + Processo + Bates">
+                <option value="no-page-6">Anexo 1 Processo XYZ 000001</option>
+                <option value="no-page-5">Anexo 1 Processo XYZ 00001</option>
+                <option value="no-page-4">Anexo 1 Processo XYZ 0001</option>
+                <option value="no-page-3">Anexo 1 Processo XYZ 001</option>
+                <option value="no-page-0">Anexo 1 Processo XYZ 1</option>
               </optgroup>
-              <optgroup label="Case + Bates">
-                <option value="case-6">Case XYZ 000001</option>
-                <option value="case-5">Case XYZ 00001</option>
-                <option value="case-4">Case XYZ 0001</option>
-                <option value="case-3">Case XYZ 001</option>
-                <option value="case-0">Case XYZ 1</option>
+              <optgroup label="Processo + Bates">
+                <option value="case-6">Processo XYZ 000001</option>
+                <option value="case-5">Processo XYZ 00001</option>
+                <option value="case-4">Processo XYZ 0001</option>
+                <option value="case-3">Processo XYZ 001</option>
+                <option value="case-0">Processo XYZ 1</option>
               </optgroup>
-              <optgroup label="Bates Number Only">
+              <optgroup label="Somente Número Bates">
                 <option value="bates-6" selected>000001, 000002, 000003</option>
                 <option value="bates-5">00001, 00002, 00003</option>
                 <option value="bates-4">0001, 0002, 0003</option>
                 <option value="bates-3">001, 002, 003</option>
                 <option value="bates-0">1, 2, 3</option>
               </optgroup>
-              <option value="custom">Custom style (other)</option>
+              <option value="custom">Estilo personalizado (outro)</option>
             </select>
           </div>
 
@@ -192,7 +202,7 @@
             <label
               for="bates-template"
               class="block mb-2 text-sm font-medium text-gray-300"
-              >Customize Style</label
+              >Personalizar Estilo</label
             >
             <input
               type="text"
@@ -201,7 +211,7 @@
               class="w-full bg-gray-700 border border-gray-600 text-white rounded-lg p-2.5 focus:ring-indigo-500 focus:border-indigo-500 font-mono"
             />
             <p class="text-xs text-gray-500 mt-1">
-              Placeholders: [BATES] [PAGE] [FILE] [FILENAME]
+              Marcadores: [BATES] [PAGE] [FILE] [FILENAME]
             </p>
           </div>
 
@@ -209,7 +219,7 @@
             id="preview-box"
             class="bg-gray-900 border border-gray-700 rounded-lg p-4 text-sm text-gray-300 font-mono"
           >
-            <div class="text-xs text-gray-500 mb-1">Preview:</div>
+            <div class="text-xs text-gray-500 mb-1">Prévia:</div>
             <div id="preview-content"></div>
           </div>
 
@@ -218,17 +228,17 @@
               <label
                 for="bates-padding"
                 class="block mb-2 text-sm font-medium text-gray-300"
-                >Bates Padding</label
+                >Zeros à Esquerda</label
               >
               <select
                 id="bates-padding"
                 class="w-full bg-gray-700 border border-gray-600 text-white rounded-lg p-2.5 focus:ring-indigo-500 focus:border-indigo-500"
               >
-                <option value="6" selected>6 digits (000001)</option>
-                <option value="5">5 digits (00001)</option>
-                <option value="4">4 digits (0001)</option>
-                <option value="3">3 digits (001)</option>
-                <option value="0">No padding (1)</option>
+                <option value="6" selected>6 dígitos (000001)</option>
+                <option value="5">5 dígitos (00001)</option>
+                <option value="4">4 dígitos (0001)</option>
+                <option value="3">3 dígitos (001)</option>
+                <option value="0">Sem preenchimento (1)</option>
               </select>
             </div>
 
@@ -236,18 +246,18 @@
               <label
                 for="position"
                 class="block mb-2 text-sm font-medium text-gray-300"
-                >Position</label
+                >Posição</label
               >
               <select
                 id="position"
                 class="w-full bg-gray-700 border border-gray-600 text-white rounded-lg p-2.5 focus:ring-indigo-500 focus:border-indigo-500"
               >
-                <option value="top-center">Header Center</option>
-                <option value="top-left">Header Left</option>
-                <option value="top-right">Header Right</option>
-                <option value="bottom-center" selected>Footer Center</option>
-                <option value="bottom-left">Footer Left</option>
-                <option value="bottom-right">Footer Right</option>
+                <option value="top-center">Cabeçalho ao Centro</option>
+                <option value="top-left">Cabeçalho à Esquerda</option>
+                <option value="top-right">Cabeçalho à Direita</option>
+                <option value="bottom-center" selected>Rodapé ao Centro</option>
+                <option value="bottom-left">Rodapé à Esquerda</option>
+                <option value="bottom-right">Rodapé à Direita</option>
               </select>
             </div>
           </div>
@@ -257,7 +267,7 @@
               <label
                 for="bates-start"
                 class="block mb-2 text-sm font-medium text-gray-300"
-                >Bates Starts From</label
+                >Bates Começa Em</label
               >
               <input
                 type="number"
@@ -272,7 +282,7 @@
               <label
                 for="file-start"
                 class="block mb-2 text-sm font-medium text-gray-300"
-                >File Counter Starts From</label
+                >Contador de Arquivos Começa Em</label
               >
               <input
                 type="number"
@@ -289,7 +299,7 @@
               <label
                 for="font-family"
                 class="block mb-2 text-sm font-medium text-gray-300"
-                >Font</label
+                >Fonte</label
               >
               <select
                 id="font-family"
@@ -305,7 +315,7 @@
               <label
                 for="font-size"
                 class="block mb-2 text-sm font-medium text-gray-300"
-                >Font Size</label
+                >Tamanho da Fonte</label
               >
               <input
                 type="number"
@@ -321,7 +331,7 @@
               <label
                 for="text-color"
                 class="block mb-2 text-sm font-medium text-gray-300"
-                >Color</label
+                >Cor</label
               >
               <input type="color" id="text-color" value="#000000" />
             </div>
@@ -391,8 +401,8 @@
               Enviar Arquivos
             </h3>
             <p class="text-gray-400">
-              Upload one or more PDF files. Drag to reorder for multi-file
-              sequencing.
+              Envie um ou mais arquivos PDF. Arraste para reordenar e definir a
+              sequência entre vários arquivos.
             </p>
           </div>
         </div>
@@ -404,11 +414,11 @@
           </div>
           <div class="flex-1">
             <h3 class="text-lg font-semibold text-white mb-1">
-              Configure Style
+              Configurar Estilo
             </h3>
             <p class="text-gray-400">
-              Choose a preset or create a custom template with placeholders like
-              [BATES], [PAGE], [FILE].
+              Escolha um modelo pronto ou crie um modelo personalizado com
+              marcadores como [BATES], [PAGE], [FILE].
             </p>
           </div>
         </div>
@@ -442,7 +452,7 @@
           class="block bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition-colors border border-gray-700"
         >
           <h3 class="text-white font-semibold mb-1">Números de Página</h3>
-          <p class="text-gray-400 text-sm">Add Números de Página to PDFs</p>
+          <p class="text-gray-400 text-sm">Adicione Números de Página a PDFs</p>
         </a>
         <a
           href="cabecalho-rodape-pdf.html"
@@ -450,7 +460,7 @@
         >
           <h3 class="text-white font-semibold mb-1">Cabeçalho e Rodapé</h3>
           <p class="text-gray-400 text-sm">
-            Add text to page headers and footers
+            Adicione texto a cabeçalhos e rodapés de página
           </p>
         </a>
         <a
@@ -458,21 +468,23 @@
           class="block bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition-colors border border-gray-700"
         >
           <h3 class="text-white font-semibold mb-1">Adicionar Marca d'Água</h3>
-          <p class="text-gray-400 text-sm">Watermark your PDF documents</p>
+          <p class="text-gray-400 text-sm">
+            Adicione marca d'água aos seus documentos PDF
+          </p>
         </a>
         <a
           href="juntar-pdf.html"
           class="block bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition-colors border border-gray-700"
         >
           <h3 class="text-white font-semibold mb-1">Juntar PDF</h3>
-          <p class="text-gray-400 text-sm">Combine multiple PDFs</p>
+          <p class="text-gray-400 text-sm">Combine vários PDFs</p>
         </a>
         <a
           href="organizar-pdf.html"
           class="block bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition-colors border border-gray-700"
         >
           <h3 class="text-white font-semibold mb-1">Organizar PDF</h3>
-          <p class="text-gray-400 text-sm">Reorder and organize pages</p>
+          <p class="text-gray-400 text-sm">Reordene e organize páginas</p>
         </a>
       </div>
     </section>
@@ -489,13 +501,14 @@
           <summary
             class="cursor-pointer font-semibold text-white flex items-center justify-between"
           >
-            What is Bates numbering?
+            O que é a numeração Bates?
             <i data-lucide="chevron-down" class="w-5 h-5"></i>
           </summary>
           <p class="mt-3 text-gray-400">
-            Bates numbering is a method of indexing legal documents for easy
-            identification and retrieval. Each page receives a unique sequential
-            number, often combined with a prefix or suffix.
+            A numeração Bates é um método de indexação de documentos jurídicos
+            para facilitar a identificação e a localização. Cada página recebe
+            um número sequencial único, muitas vezes combinado com um prefixo ou
+            sufixo.
           </p>
         </details>
         <details class="bg-gray-800 p-5 rounded-lg border border-gray-700">
@@ -506,20 +519,20 @@
             <i data-lucide="chevron-down" class="w-5 h-5"></i>
           </summary>
           <p class="mt-3 text-gray-400">
-            Sim! Envie vários PDFs e os números de Bates continuarão
-            sequentially across all files. Arraste os arquivos to reorder them.
+            Sim! Envie vários PDFs e os números Bates continuarão em sequência
+            por todos os arquivos. Arraste os arquivos para reordená-los.
           </p>
         </details>
         <details class="bg-gray-800 p-5 rounded-lg border border-gray-700">
           <summary
             class="cursor-pointer font-semibold text-white flex items-center justify-between"
           >
-            Are my files secure?
+            Meus arquivos estão seguros?
             <i data-lucide="chevron-down" class="w-5 h-5"></i>
           </summary>
           <p class="mt-3 text-gray-400">
-            All processing happens entirely in your browser. seus arquivos nunca
-            saem do seu dispositivo.
+            Todo o processamento acontece inteiramente no seu navegador. Seus
+            arquivos nunca saem do seu dispositivo.
           </p>
         </details>
       </div>

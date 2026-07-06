@@ -179,19 +179,19 @@
             <label
               for="deskew-threshold"
               class="block mb-2 text-sm font-medium text-gray-300"
-              >Skew Threshold (degrees)</label
+              >Limite de Inclinação (graus)</label
             >
             <select
               id="deskew-threshold"
               class="w-full bg-gray-700 border border-gray-600 text-white rounded-lg p-2.5 focus:ring-indigo-500 focus:border-indigo-500"
             >
-              <option value="0.1">0.1° (Very Sensitive)</option>
-              <option value="0.5" selected>0.5° (Default)</option>
+              <option value="0.1">0.1° (Muito Sensível)</option>
+              <option value="0.5" selected>0.5° (Padrão)</option>
               <option value="1.0">1.0° (Normal)</option>
-              <option value="2.0">2.0° (Less Sensitive)</option>
+              <option value="2.0">2.0° (Menos Sensível)</option>
             </select>
             <p class="text-xs text-gray-500 mt-1">
-              Pages with skew below this threshold won't be corrected.
+              Páginas com inclinação abaixo desse limite não serão corrigidas.
             </p>
           </div>
 
@@ -199,16 +199,16 @@
             <label
               for="deskew-dpi"
               class="block mb-2 text-sm font-medium text-gray-300"
-              >Processing Quality (DPI)</label
+              >Qualidade de Processamento (DPI)</label
             >
             <select
               id="deskew-dpi"
               class="w-full bg-gray-700 border border-gray-600 text-white rounded-lg p-2.5 focus:ring-indigo-500 focus:border-indigo-500"
             >
-              <option value="100">100 (Fast)</option>
-              <option value="150" selected>150 (Default)</option>
-              <option value="200">200 (Better)</option>
-              <option value="300">300 (Best Quality)</option>
+              <option value="100">100 (Rápido)</option>
+              <option value="150" selected>150 (Padrão)</option>
+              <option value="200">200 (Melhor)</option>
+              <option value="300">300 (Máxima Qualidade)</option>
             </select>
           </div>
 
@@ -218,14 +218,16 @@
         </div>
 
         <div id="results-area" class="hidden mt-6 p-4 bg-gray-700 rounded-lg">
-          <h3 class="text-lg font-semibold text-white mb-3">Deskew Results</h3>
+          <h3 class="text-lg font-semibold text-white mb-3">
+            Resultados do Endireitamento
+          </h3>
           <div class="grid grid-cols-2 gap-4 text-sm">
             <div>
-              <span class="text-gray-400">Total Pages:</span>
+              <span class="text-gray-400">Total de Páginas:</span>
               <span id="result-total" class="text-white ml-2">-</span>
             </div>
             <div>
-              <span class="text-gray-400">Pages Corrected:</span>
+              <span class="text-gray-400">Páginas Corrigidas:</span>
               <span id="result-corrected" class="text-white ml-2">-</span>
             </div>
           </div>
@@ -296,8 +298,12 @@
             2
           </div>
           <div class="flex-1">
-            <h3 class="text-lg font-semibold text-white mb-1">Auto-Detect</h3>
-            <p class="text-gray-400">OpenCV analyzes and detects skew angles</p>
+            <h3 class="text-lg font-semibold text-white mb-1">
+              Detecção Automática
+            </h3>
+            <p class="text-gray-400">
+              O OpenCV analisa e detecta os ângulos de inclinação
+            </p>
           </div>
         </div>
         <div class="flex items-start gap-4">
@@ -308,7 +314,9 @@
           </div>
           <div class="flex-1">
             <h3 class="text-lg font-semibold text-white mb-1">Baixar</h3>
-            <p class="text-gray-400">Get your straightened PDF instantly</p>
+            <p class="text-gray-400">
+              Baixe seu PDF endireitado instantaneamente
+            </p>
           </div>
         </div>
       </div>
@@ -343,21 +351,21 @@
           class="block bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition-colors border border-gray-700"
         >
           <h3 class="text-white font-semibold mb-1">Reparar PDF</h3>
-          <p class="text-gray-400 text-sm">Fix corrupted PDF files</p>
+          <p class="text-gray-400 text-sm">Reparar arquivos PDF corrompidos</p>
         </a>
         <a
           href="girar-pdf.html"
           class="block bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition-colors border border-gray-700"
         >
           <h3 class="text-white font-semibold mb-1">Girar PDF</h3>
-          <p class="text-gray-400 text-sm">Rotate PDF pages</p>
+          <p class="text-gray-400 text-sm">Girar páginas de PDF</p>
         </a>
         <a
           href="ocr-pdf.html"
           class="block bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition-colors border border-gray-700"
         >
           <h3 class="text-white font-semibold mb-1">OCR em PDF</h3>
-          <p class="text-gray-400 text-sm">Make PDF searchable</p>
+          <p class="text-gray-400 text-sm">Tornar o PDF pesquisável</p>
         </a>
       </div>
     </section>
@@ -374,34 +382,35 @@
           <summary
             class="cursor-pointer font-semibold text-white flex items-center justify-between"
           >
-            What is PDF deskewing?
+            O que é o endireitamento de PDF?
             <i data-lucide="chevron-down" class="w-5 h-5"></i>
           </summary>
           <p class="mt-3 text-gray-400">
-            Deskewing is the process of correcting tilted or rotated pages in
-            scanned documents. When you scan a document, it's common for pages
-            to be slightly skewed. This tool automatically detects and corrects
-            that skew.
+            O endireitamento é o processo de corrigir páginas inclinadas ou
+            giradas em documentos digitalizados. Ao escanear um documento, é
+            comum que as páginas fiquem levemente inclinadas. Esta ferramenta
+            detecta e corrige essa inclinação automaticamente.
           </p>
         </details>
         <details class="bg-gray-800 p-5 rounded-lg border border-gray-700">
           <summary
             class="cursor-pointer font-semibold text-white flex items-center justify-between"
           >
-            How accurate is the skew detection?
+            Qual é a precisão da detecção de inclinação?
             <i data-lucide="chevron-down" class="w-5 h-5"></i>
           </summary>
           <p class="mt-3 text-gray-400">
-            Our tool uses OpenCV's advanced image processing algorithms to
-            detect skew angles with high precision. It works best on documents
-            with clear text content.
+            Nossa ferramenta usa os algoritmos avançados de processamento de
+            imagem do OpenCV para detectar os ângulos de inclinação com alta
+            precisão. Ela funciona melhor em documentos com conteúdo de texto
+            nítido.
           </p>
         </details>
         <details class="bg-gray-800 p-5 rounded-lg border border-gray-700">
           <summary
             class="cursor-pointer font-semibold text-white flex items-center justify-between"
           >
-            Are my files private?
+            Meus arquivos são privados?
             <i data-lucide="chevron-down" class="w-5 h-5"></i>
           </summary>
           <p class="mt-3 text-gray-400">
@@ -451,14 +460,14 @@
           {
             "@type": "Como Step",
             "position": 2,
-            "name": "Auto-Detect",
-            "text": "OpenCV analyzes and detects skew angles"
+            "name": "Detecção Automática",
+            "text": "O OpenCV analisa e detecta os ângulos de inclinação"
           },
           {
             "@type": "Como Step",
             "position": 3,
             "name": "Baixar",
-            "text": "Get your straightened PDF instantly"
+            "text": "Baixe seu PDF endireitado instantaneamente"
           }
         ]
       }
@@ -472,13 +481,13 @@
           {
             "@type": "ListItem",
             "position": 1,
-            "name": "Home",
+            "name": "Início",
             "item": "https://fastformat.co/pdf"
           },
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Deskew PDF",
+            "name": "Endireitar PDF",
             "item": "https://fastformat.co/pdf/endireitar-pdf"
           }
         ]

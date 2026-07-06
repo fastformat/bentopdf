@@ -156,7 +156,7 @@
               >
             </p>
             <p class="text-xs text-gray-500" data-i18n="upload.hints.singlePdf">
-              A single PDF file
+              Um único arquivo PDF
             </p>
             <p class="text-xs text-gray-500" data-i18n="upload.filesNeverLeave">
               Seus arquivos nunca saem do seu dispositivo.
@@ -181,10 +181,13 @@
               class="list-disc list-inside text-xs text-gray-400 mt-1 space-y-1"
             >
               <li>
-                Choose how many pages to fit on each sheet (2, 4, 9, or 16).
+                Escolha quantas páginas cabem em cada folha (2, 4, 9 ou 16).
               </li>
               <li>Selecione o tamanho da página de saída e orientação.</li>
-              <li>Optionally add margins and borders around each page.</li>
+              <li>
+                Opcionalmente, adicione margens e bordas ao redor de cada
+                página.
+              </li>
             </ul>
           </div>
 
@@ -193,7 +196,7 @@
               <label
                 for="pages-per-sheet"
                 class="block mb-2 text-sm font-medium text-gray-300"
-                >Pages per Sheet</label
+                >Páginas por Folha</label
               >
               <select
                 id="pages-per-sheet"
@@ -209,7 +212,7 @@
               <label
                 for="output-page-size"
                 class="block mb-2 text-sm font-medium text-gray-300"
-                >Output Page Size</label
+                >Tamanho da Página de Saída</label
               >
               <select
                 id="output-page-size"
@@ -228,15 +231,15 @@
               <label
                 for="output-orientation"
                 class="block mb-2 text-sm font-medium text-gray-300"
-                >Orientation</label
+                >Orientação</label
               >
               <select
                 id="output-orientation"
                 class="w-full bg-gray-700 border border-gray-600 text-white rounded-lg p-2.5"
               >
-                <option value="auto" selected>Auto</option>
-                <option value="portrait">Portrait</option>
-                <option value="landscape">Landscape</option>
+                <option value="auto" selected>Automático</option>
+                <option value="portrait">Retrato</option>
+                <option value="landscape">Paisagem</option>
               </select>
             </div>
             <div class="flex items-end gap-4">
@@ -246,7 +249,7 @@
                   id="add-margins"
                   class="w-4 h-4 text-indigo-600 bg-gray-700 border-gray-600 rounded focus:ring-indigo-600"
                 />
-                <span class="text-sm text-gray-300">Add Margins</span>
+                <span class="text-sm text-gray-300">Adicionar Margens</span>
               </label>
             </div>
           </div>
@@ -258,13 +261,13 @@
                 id="add-border"
                 class="w-4 h-4 text-indigo-600 bg-gray-700 border-gray-600 rounded focus:ring-indigo-600"
               />
-              <span class="text-sm text-gray-300">Add Border</span>
+              <span class="text-sm text-gray-300">Adicionar Borda</span>
             </label>
             <div id="border-color-wrapper" class="hidden">
               <label
                 for="border-color"
                 class="block mb-2 text-sm font-medium text-gray-300"
-                >Border Color</label
+                >Cor da Borda</label
               >
               <input type="color" id="border-color" value="#000000" />
             </div>
@@ -546,7 +549,7 @@
           {
             "@type": "ListItem",
             "position": 1,
-            "name": "Home",
+            "name": "Início",
             "item": "https://fastformat.co/pdf"
           },
           {

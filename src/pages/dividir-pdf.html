@@ -168,18 +168,22 @@
           <label
             for="split-mode"
             class="block mb-2 text-sm font-medium text-gray-300"
-            >Split Mode</label
+            >Modo de Divisão</label
           >
           <select
             id="split-mode"
             class="w-full bg-gray-700 border border-gray-600 text-white rounded-lg p-2.5 mb-4"
           >
-            <option value="range">Extract by Page Range (Default)</option>
-            <option value="even-odd">Split by Even/Odd Pages</option>
-            <option value="all">Split All Pages into Separate Files</option>
-            <option value="visual">Selecionar Páginas Visually</option>
-            <option value="bookmarks">Split by Bookmarks</option>
-            <option value="n-times">Split N Times</option>
+            <option value="range">
+              Extrair por Intervalo de Páginas (Padrão)
+            </option>
+            <option value="even-odd">Dividir por Páginas Pares/Ímpares</option>
+            <option value="all">
+              Dividir Todas as Páginas em Arquivos Separados
+            </option>
+            <option value="visual">Selecionar Páginas Visualmente</option>
+            <option value="bookmarks">Dividir por Marcadores</option>
+            <option value="n-times">Dividir N Vezes</option>
           </select>
 
           <div id="range-panel">
@@ -191,24 +195,27 @@
                 class="list-disc list-inside text-xs text-gray-400 mt-1 space-y-1"
               >
                 <li>
-                  Enter Números de Página separated by commas (e.g., 2, 8, 14).
+                  Digite os Números de Página separados por vírgulas (ex.: 2, 8,
+                  14).
                 </li>
-                <li>Enter page ranges using a hyphen (e.g., 5-10).</li>
                 <li>
-                  Combine them for complex selections (e.g., 1-3, 7, 12-15).
+                  Digite intervalos de páginas usando um hífen (ex.: 5-10).
+                </li>
+                <li>
+                  Combine-os para seleções complexas (ex.: 1-3, 7, 12-15).
                 </li>
               </ul>
             </div>
             <label
               for="page-range"
               class="block mb-2 text-sm font-medium text-gray-300"
-              >Page Range</label
+              >Intervalo de Páginas</label
             >
             <input
               type="text"
               id="page-range"
               class="bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-2.5"
-              placeholder="e.g. 1-5, 8, 11-13"
+              placeholder="ex.: 1-5, 8, 11-13"
             />
           </div>
 
@@ -221,8 +228,8 @@
                 class="list-disc list-inside text-xs text-gray-400 mt-1 space-y-1"
               >
                 <li>
-                  Extract all even pages (2, 4, 6...) or all odd pages (1, 3,
-                  5...) into a new PDF.
+                  Extraia todas as páginas pares (2, 4, 6...) ou todas as
+                  páginas ímpares (1, 3, 5...) para um novo PDF.
                 </li>
               </ul>
             </div>
@@ -237,7 +244,7 @@
               <label
                 for="split-even"
                 class="ml-2 text-sm font-medium text-gray-300"
-                >Even Pages</label
+                >Páginas Pares</label
               >
             </div>
             <div class="flex items-center">
@@ -251,7 +258,7 @@
               <label
                 for="split-odd"
                 class="ml-2 text-sm font-medium text-gray-300"
-                >Odd Pages</label
+                >Páginas Ímpares</label
               >
             </div>
           </div>
@@ -265,11 +272,11 @@
                 class="list-disc list-inside text-xs text-gray-400 mt-1 space-y-1"
               >
                 <li>
-                  Cada página do PDF será salva como um PDF separado file.
+                  Cada página do PDF será salva como um arquivo PDF separado.
                 </li>
                 <li>
-                  O resultado será baixado como um arquivo ZIP contendo todos os
-                  pages.
+                  O resultado será baixado como um arquivo ZIP contendo todas as
+                  páginas.
                 </li>
               </ul>
             </div>
@@ -284,8 +291,8 @@
                 class="list-disc list-inside text-xs text-gray-400 mt-1 space-y-1"
               >
                 <li>
-                  Click on the page thumbnails below to select the pages you
-                  want to extract.
+                  Clique nas miniaturas das páginas abaixo para selecionar as
+                  páginas que você quer extrair.
                 </li>
                 <li>As páginas selecionadas serão destacadas.</li>
               </ul>
@@ -306,24 +313,24 @@
               <ul
                 class="list-disc list-inside text-xs text-gray-400 mt-1 space-y-1"
               >
-                <li>Split the PDF based on its bookmarks (outline).</li>
-                <li>Select the bookmark level to split at.</li>
+                <li>Divida o PDF com base em seus marcadores (sumário).</li>
+                <li>Selecione o nível de marcador em que dividir.</li>
               </ul>
             </div>
             <label
               for="bookmark-level"
               class="block mb-2 text-sm font-medium text-gray-300"
-              >Bookmark Level</label
+              >Nível de Marcador</label
             >
             <select
               id="bookmark-level"
               class="w-full bg-gray-700 border border-gray-600 text-white rounded-lg p-2.5 mb-4"
             >
-              <option value="all" selected>All Levels</option>
-              <option value="0">Level 0 (Top Level Only)</option>
-              <option value="1">Level 1</option>
-              <option value="2">Level 2</option>
-              <option value="3">Level 3</option>
+              <option value="all" selected>Todos os Níveis</option>
+              <option value="0">Nível 0 (Apenas o Nível Superior)</option>
+              <option value="1">Nível 1</option>
+              <option value="2">Nível 2</option>
+              <option value="3">Nível 3</option>
             </select>
           </div>
 
@@ -336,14 +343,14 @@
                 class="list-disc list-inside text-xs text-gray-400 mt-1 space-y-1"
               >
                 <li>
-                  Split the PDF into multiple files, each containing N pages.
+                  Divida o PDF em vários arquivos, cada um contendo N páginas.
                 </li>
               </ul>
             </div>
             <label
               for="split-n-value"
               class="block mb-2 text-sm font-medium text-gray-300"
-              >Pages per file (N)</label
+              >Páginas por arquivo (N)</label
             >
             <input
               type="number"
@@ -362,7 +369,7 @@
           </div>
 
           <div id="output-mode-wrapper" class="mt-4">
-            <p class="block mb-2 text-sm font-medium text-gray-300">Output</p>
+            <p class="block mb-2 text-sm font-medium text-gray-300">Saída</p>
             <div class="flex items-center mb-2">
               <input
                 id="output-combine"
@@ -375,7 +382,7 @@
               <label
                 for="output-combine"
                 class="ml-2 text-sm font-medium text-gray-300"
-                >Single combined PDF</label
+                >Um único PDF combinado</label
               >
             </div>
             <div class="flex items-center">
@@ -390,11 +397,11 @@
                 for="output-separate"
                 id="output-separate-label"
                 class="ml-2 text-sm font-medium text-gray-300"
-                >One PDF per range</label
+                >Um PDF por intervalo</label
               >
             </div>
             <p class="mt-2 text-xs text-gray-400">
-              Multiple files are downloaded together as a ZIP.
+              Vários arquivos são baixados juntos como um ZIP.
             </p>
           </div>
 
@@ -594,8 +601,8 @@
           </summary>
           <p class="mt-3 text-gray-400">
             Sim! Você pode extrair páginas específicas ou intervalos de páginas
-            de seu PDF. Select exactly which pages you need or split into
-            individual files.
+            do seu PDF. Selecione exatamente quais páginas você precisa ou
+            divida em arquivos individuais.
           </p>
         </details>
         <details class="bg-gray-800 p-5 rounded-lg border border-gray-700">
@@ -606,8 +613,8 @@
             <i data-lucide="chevron-down" class="w-5 h-5"></i>
           </summary>
           <p class="mt-3 text-gray-400">
-            Não! PDFs divididos mantêm a exata mesma qualidade do original
-            document. No compression or quality loss occurs.
+            Não! PDFs divididos mantêm exatamente a mesma qualidade do documento
+            original. Não ocorre nenhuma compressão ou perda de qualidade.
           </p>
         </details>
         <details class="bg-gray-800 p-5 rounded-lg border border-gray-700">
@@ -618,8 +625,8 @@
             <i data-lucide="chevron-down" class="w-5 h-5"></i>
           </summary>
           <p class="mt-3 text-gray-400">
-            Yes, process multiple PDFs in batches for efficient document
-            management.
+            Sim, processe vários PDFs em lotes para uma gestão de documentos
+            eficiente.
           </p>
         </details>
       </div>

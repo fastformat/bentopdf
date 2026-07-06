@@ -175,18 +175,20 @@
               class="list-disc list-inside text-xs text-gray-400 mt-1 space-y-1"
             >
               <li>
-                <strong>Vertical:</strong> Split each page into left and right
-                halves.
+                <strong>Vertical:</strong> Divide cada página nas metades
+                esquerda e direita.
               </li>
               <li>
-                <strong>Horizontal:</strong> Split each page into top and bottom
-                halves.
+                <strong>Horizontal:</strong> Divide cada página nas metades
+                superior e inferior.
               </li>
               <li>
                 Especifique quais páginas dividir. Outras páginas serão mantidas
                 como estão.
               </li>
-              <li>Leave blank or use "all" to divide all pages.</li>
+              <li>
+                Deixe em branco ou use "all" para dividir todas as páginas.
+              </li>
             </ul>
           </div>
 
@@ -194,17 +196,17 @@
             <label
               for="page-range"
               class="block mb-2 text-sm font-medium text-gray-300"
-              >Pages to Divide</label
+              >Páginas para Dividir</label
             >
             <input
               type="text"
               id="page-range"
               class="bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-2.5"
-              placeholder="e.g. 1-5, 8, 11-13 (leave blank for all pages)"
+              placeholder="ex.: 1-5, 8, 11-13 (deixe em branco para todas as páginas)"
             />
             <p class="mt-1 text-xs text-gray-400">
-              Enter Números de Página separated by commas or ranges with
-              hyphens.
+              Digite os Números de Página separados por vírgulas ou intervalos
+              com hifens.
             </p>
           </div>
 
@@ -212,14 +214,16 @@
             <label
               for="split-type"
               class="block mb-2 text-sm font-medium text-gray-300"
-              >Split Direction</label
+              >Direção da Divisão</label
             >
             <select
               id="split-type"
               class="w-full bg-gray-700 border border-gray-600 text-white rounded-lg p-2.5"
             >
-              <option value="vertical">Vertical (Left & Right)</option>
-              <option value="horizontal">Horizontal (Top & Bottom)</option>
+              <option value="vertical">Vertical (Esquerda e Direita)</option>
+              <option value="horizontal">
+                Horizontal (Superior e Inferior)
+              </option>
             </select>
           </div>
 
@@ -499,13 +503,13 @@
           {
             "@type": "ListItem",
             "position": 1,
-            "name": "Home",
+            "name": "Início",
             "item": "https://fastformat.co/pdf"
           },
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Divide Pages",
+            "name": "Dividir Páginas",
             "item": "https://fastformat.co/pdf/dividir-paginas-pdf"
           }
         ]

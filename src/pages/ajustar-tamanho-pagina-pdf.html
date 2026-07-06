@@ -173,7 +173,7 @@
             <label
               for="target-size"
               class="block mb-2 text-sm font-medium text-gray-300"
-              >Target Page Size</label
+              >Tamanho da Página Desejado</label
             >
             <select
               id="target-size"
@@ -185,7 +185,7 @@
               <option value="A3">A3 (297 × 420 mm)</option>
               <option value="A5">A5 (148 × 210 mm)</option>
               <option value="Tabloid">Tabloid (11 × 17 in)</option>
-              <option value="Custom">Custom...</option>
+              <option value="Custom">Personalizado...</option>
             </select>
           </div>
 
@@ -196,7 +196,7 @@
                 <label
                   for="custom-width"
                   class="block mb-1 text-xs font-medium text-gray-400"
-                  >Width</label
+                  >Largura</label
                 >
                 <input
                   type="number"
@@ -211,7 +211,7 @@
                 <label
                   for="custom-height"
                   class="block mb-1 text-xs font-medium text-gray-400"
-                  >Height</label
+                  >Altura</label
                 >
                 <input
                   type="number"
@@ -227,14 +227,14 @@
               <label
                 for="custom-units"
                 class="block mb-1 text-xs font-medium text-gray-400"
-                >Units</label
+                >Unidades</label
               >
               <select
                 id="custom-units"
                 class="w-full bg-gray-700 border border-gray-600 text-white rounded-lg p-2 text-sm"
               >
-                <option value="in">Inches</option>
-                <option value="mm">Millimeters</option>
+                <option value="in">Polegadas</option>
+                <option value="mm">Milímetros</option>
               </select>
             </div>
           </div>
@@ -244,22 +244,22 @@
             <label
               for="orientation"
               class="block mb-2 text-sm font-medium text-gray-300"
-              >Orientation</label
+              >Orientação</label
             >
             <select
               id="orientation"
               class="w-full bg-gray-700 border border-gray-600 text-white rounded-lg p-2.5"
             >
-              <option value="auto">Auto (Keep Original)</option>
-              <option value="portrait">Portrait</option>
-              <option value="landscape">Landscape</option>
+              <option value="auto">Automático (Manter Original)</option>
+              <option value="portrait">Retrato</option>
+              <option value="landscape">Paisagem</option>
             </select>
           </div>
 
           <!-- Scaling Mode -->
           <div>
             <label class="block mb-2 text-sm font-medium text-gray-300"
-              >Content Scaling</label
+              >Escala do Conteúdo</label
             >
             <div class="flex gap-4 p-2 rounded-lg bg-gray-900">
               <label
@@ -273,9 +273,9 @@
                   class="w-4 h-4 text-indigo-600 bg-gray-700 border-gray-600 focus:ring-indigo-500"
                 />
                 <div>
-                  <span class="font-semibold text-white">Fit</span>
+                  <span class="font-semibold text-white">Ajustar</span>
                   <p class="text-xs text-gray-400">
-                    Preserves all content, may add margins.
+                    Preserva todo o conteúdo, pode adicionar margens.
                   </p>
                 </div>
               </label>
@@ -289,9 +289,11 @@
                   class="w-4 h-4 text-indigo-600 bg-gray-700 border-gray-600 focus:ring-indigo-500"
                 />
                 <div>
-                  <span class="font-semibold text-white">Fill (Crop)</span>
+                  <span class="font-semibold text-white"
+                    >Preencher (Cortar)</span
+                  >
                   <p class="text-xs text-gray-400">
-                    Fills the page, may crop content.
+                    Preenche a página, pode cortar o conteúdo.
                   </p>
                 </div>
               </label>
@@ -308,7 +310,7 @@
             <div class="flex items-center gap-3">
               <input type="color" id="background-color" value="#ffffff" />
               <span class="text-sm text-gray-400"
-                >Color for margins/padding</span
+                >Cor para margens/preenchimento</span
               >
             </div>
           </div>
@@ -542,9 +544,9 @@
       {
         "@context": "https://schema.org",
         "@type": "SoftwareApplication",
-        "name": "Ajustar Tamanho Da Pagina Pdf - FastFormat",
-        "applicationCategory": "PDF Tool",
-        "operatingSystem": "Any - Web Browser",
+        "name": "Ajustar Tamanho da Página do PDF - FastFormat",
+        "applicationCategory": "Ferramenta de PDF",
+        "operatingSystem": "Qualquer - Navegador Web",
         "offers": {
           "@type": "Offer",
           "price": "0",
@@ -590,13 +592,13 @@
           {
             "@type": "ListItem",
             "position": 1,
-            "name": "Home",
+            "name": "Início",
             "item": "https://fastformat.co/pdf"
           },
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Fix Page Size",
+            "name": "Ajustar Tamanho da Página",
             "item": "https://fastformat.co/pdf/ajustar-tamanho-pagina-pdf"
           }
         ]

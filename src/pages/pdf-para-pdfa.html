@@ -184,20 +184,20 @@
         <div id="options-container" class="hidden mt-6 space-y-6">
           <div>
             <label class="block mb-2 text-sm font-medium text-gray-300"
-              >PDF/A Version</label
+              >Versão PDF/A</label
             >
             <select
               id="pdfa-level"
               class="w-full bg-gray-700 border border-gray-600 text-white rounded-lg p-2.5 focus:ring-indigo-500 focus:border-indigo-500"
             >
               <option value="PDF/A-1b">
-                PDF/A-1b (Strict, no transparency)
+                PDF/A-1b (Rigoroso, sem transparência)
               </option>
               <option value="PDF/A-2b" selected>
-                PDF/A-2b (Recommended, allows transparency)
+                PDF/A-2b (Recomendado, permite transparência)
               </option>
               <option value="PDF/A-3b">
-                PDF/A-3b (Modern, allows attachments)
+                PDF/A-3b (Moderno, permite anexos)
               </option>
             </select>
           </div>
@@ -215,12 +215,12 @@
                 for="pre-flatten"
                 class="text-sm font-medium text-gray-200 cursor-pointer"
               >
-                Pre-flatten PDF (recommended for complex files)
+                Achatar PDF previamente (recomendado para arquivos complexos)
               </label>
               <p class="text-xs text-gray-400 mt-1">
-                Converts the PDF to images first, ensuring better PDF/A
-                compliance. Recommended if validation fails on the normal
-                conversion.
+                Converte o PDF em imagens primeiro, garantindo melhor
+                conformidade com PDF/A. Recomendado se a validação falhar na
+                conversão normal.
               </p>
             </div>
           </div>
@@ -242,7 +242,7 @@
       >
         <div class="solid-spinner"></div>
         <p id="loader-text" class="text-white text-lg font-medium">
-          Converting...
+          Convertendo...
         </p>
       </div>
     </div>
