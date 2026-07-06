@@ -63,7 +63,7 @@
     <!-- Mobile Web App -->
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-title" content="Merge PDF" />
+    <meta name="apple-mobile-web-app-title" content="Juntar PDF" />
 
     <link href="/src/css/styles.css" rel="stylesheet" />
 
@@ -108,20 +108,20 @@
           class="flex items-center gap-2 text-indigo-400 hover:text-indigo-300 mb-6 font-semibold"
         >
           <i data-lucide="arrow-left" class="cursor-pointer"></i>
-          <span class="cursor-pointer" data-i18n="tools.backToTools">
-            Back to Tools
-          </span>
+          <span class="cursor-pointer" data-i18n="tools.backToTools"
+            >Voltar para Ferramentas</span
+          >
         </button>
 
         <h1
           class="text-2xl font-bold text-white mb-2"
           data-i18n="tools:mergePdf.name"
         >
-          Merge PDF
+          Juntar Pdf
         </h1>
         <p class="text-gray-400 mb-6" data-i18n="tools:mergePdf.subtitle">
-          Combine whole files, or select specific pages to merge into a new
-          document.
+          Converta, edite e processe seus arquivos de forma simples, rápida e
+          100% no navegador.
         </p>
 
         <!-- Drop Zone for Main PDF Upload -->
@@ -136,15 +136,17 @@
             ></i>
             <p class="mb-2 text-sm text-gray-400">
               <span class="font-semibold" data-i18n="upload.clickToSelect"
-                >Click to select a file</span
+                >Clique para selecionar um arquivo</span
               >
-              <span data-i18n="upload.orDragAndDrop">or drag and drop</span>
+              <span data-i18n="upload.orarraste e solte"
+                >ou arraste e solte</span
+              >
             </p>
             <p class="text-xs text-gray-500" data-i18n="upload.pdfOrImages">
               PDFs or Images
             </p>
             <p class="text-xs text-gray-500" data-i18n="upload.filesNeverLeave">
-              Your files never leave your device.
+              Seus arquivos nunca saem do seu dispositivo.
             </p>
           </div>
           <input
@@ -163,14 +165,14 @@
             class="btn bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-4 py-2 rounded-lg flex items-center gap-2"
           >
             <i data-lucide="plus"></i>
-            <span data-i18n="upload.addMore">Add More Files</span>
+            <span data-i18n="upload.addMore">Adicionar Mais Arquivos</span>
           </button>
           <button
             id="clear-files-btn"
             class="btn bg-gray-700 hover:bg-gray-600 text-white font-semibold px-4 py-2 rounded-lg flex items-center gap-2"
           >
             <i data-lucide="trash-2"></i>
-            <span data-i18n="upload.clearAll">Clear All</span>
+            <span data-i18n="upload.clearAll">Limpar Tudo</span>
           </button>
         </div>
 
@@ -231,8 +233,8 @@
               >
                 <li>All pages from your uploaded PDFs are shown below.</li>
                 <li>
-                  Simply drag and drop the individual page thumbnails to create
-                  the exact order you want for your new file.
+                  Simply arraste e solte the individual page thumbnails to
+                  create the exact order you want for your new file.
                 </li>
               </ul>
             </div>
@@ -269,7 +271,7 @@
           </label>
 
           <button id="process-btn" class="btn-gradient w-full mt-6">
-            Merge PDFs
+            Processar
           </button>
         </div>
       </div>
@@ -285,7 +287,7 @@
       >
         <div class="solid-spinner"></div>
         <p id="loader-text" class="text-white text-lg font-medium">
-          Processing...
+          Processando...
         </p>
       </div>
     </div>
@@ -304,7 +306,7 @@
           data-i18n="alert.title"
           data-i18n="alert.title"
         >
-          Alert
+          Alerta
         </h3>
         <p id="alert-message" class="text-gray-300 mb-6"></p>
         <button
@@ -322,7 +324,7 @@
         class="text-2xl md:text-3xl font-bold text-white mb-8 text-center"
         data-i18n="howItWorks.title"
       >
-        How It Works
+        Como Funciona
       </h2>
       <div class="space-y-6">
         <div class="flex items-start gap-4">
@@ -334,7 +336,7 @@
           <div class="flex-1">
             <h3 class="text-lg font-semibold text-white mb-1">Upload PDFs</h3>
             <p class="text-gray-400">
-              Select or drag and drop multiple PDF files you want to merge
+              Select or arraste e solte multiple PDF files you want to merge
             </p>
           </div>
         </div>
@@ -371,7 +373,7 @@
             4
           </div>
           <div class="flex-1">
-            <h3 class="text-lg font-semibold text-white mb-1">Download</h3>
+            <h3 class="text-lg font-semibold text-white mb-1">Baixar</h3>
             <p class="text-gray-400">
               Save your merged PDF - all pages combined in the order you chose
             </p>
@@ -386,43 +388,53 @@
         class="text-2xl md:text-3xl font-bold text-white mb-6 text-center"
         data-i18n="relatedTools.title"
       >
-        Related PDF Tools
+        Ferramentas de PDF Relacionadas
       </h2>
       <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
         <a
           href="dividir-pdf.html"
           class="block bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition-colors border border-gray-700"
         >
-          <h3 class="text-white font-semibold mb-1">Split Pdf</h3>
-          <p class="text-gray-400 text-sm">Free online split pdf tool</p>
+          <h3 class="text-white font-semibold mb-1">Dividir PDF</h3>
+          <p class="text-gray-400 text-sm">
+            Ferramenta online grátis para split pdf
+          </p>
         </a>
         <a
           href="organizar-pdf.html"
           class="block bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition-colors border border-gray-700"
         >
           <h3 class="text-white font-semibold mb-1">Organize Pdf</h3>
-          <p class="text-gray-400 text-sm">Free online organize pdf tool</p>
+          <p class="text-gray-400 text-sm">
+            Ferramenta online grátis para organize pdf
+          </p>
         </a>
         <a
           href="comprimir-pdf.html"
           class="block bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition-colors border border-gray-700"
         >
-          <h3 class="text-white font-semibold mb-1">Compress Pdf</h3>
-          <p class="text-gray-400 text-sm">Free online compress pdf tool</p>
+          <h3 class="text-white font-semibold mb-1">Comprimir PDF</h3>
+          <p class="text-gray-400 text-sm">
+            Ferramenta online grátis para compress pdf
+          </p>
         </a>
         <a
           href="girar-pdf.html"
           class="block bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition-colors border border-gray-700"
         >
-          <h3 class="text-white font-semibold mb-1">Rotate Pdf</h3>
-          <p class="text-gray-400 text-sm">Free online rotate pdf tool</p>
+          <h3 class="text-white font-semibold mb-1">Girar PDF</h3>
+          <p class="text-gray-400 text-sm">
+            Ferramenta online grátis para rotate pdf
+          </p>
         </a>
         <a
           href="excluir-paginas-pdf.html"
           class="block bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition-colors border border-gray-700"
         >
           <h3 class="text-white font-semibold mb-1">Delete Pages</h3>
-          <p class="text-gray-400 text-sm">Free online delete pages tool</p>
+          <p class="text-gray-400 text-sm">
+            Ferramenta online grátis para delete pages
+          </p>
         </a>
       </div>
     </section>
@@ -433,14 +445,14 @@
         class="text-2xl md:text-3xl font-bold text-white mb-6 text-center"
         data-i18n="faq.sectionTitle"
       >
-        Frequently Asked Questions
+        Perguntas Frequentes
       </h2>
       <div class="space-y-4">
         <details class="bg-gray-800 p-5 rounded-lg border border-gray-700">
           <summary
             class="cursor-pointer font-semibold text-white flex items-center justify-between"
           >
-            How many PDFs can I merge at once?
+            Quantos PDFs posso juntar de uma vez?
             <i data-lucide="chevron-down" class="w-5 h-5"></i>
           </summary>
           <p class="mt-3 text-gray-400">
@@ -452,24 +464,25 @@
           <summary
             class="cursor-pointer font-semibold text-white flex items-center justify-between"
           >
-            Will merging reduce PDF quality?
+            Juntar PDFs reduz a qualidade do PDF?
             <i data-lucide="chevron-down" class="w-5 h-5"></i>
           </summary>
           <p class="mt-3 text-gray-400">
-            No! FastFormat preserves the original quality of all PDFs when
-            merging. Your documents remain crisp and clear with no quality loss.
+            Não! O FastFormat preserva a qualidade original de todos os PDFs
+            quando merging. Your documents remain crisp and clear with no
+            quality loss.
           </p>
         </details>
         <details class="bg-gray-800 p-5 rounded-lg border border-gray-700">
           <summary
             class="cursor-pointer font-semibold text-white flex items-center justify-between"
           >
-            Can I reorder pages after selecting files?
+            Posso reordenar as páginas depois de selecionar os arquivos?
             <i data-lucide="chevron-down" class="w-5 h-5"></i>
           </summary>
           <p class="mt-3 text-gray-400">
-            Yes! Simply drag and drop files to arrange them in any order before
-            clicking the merge button.
+            Sim! Simplesmente arraste e solte os arquivos para organizá-los em
+            qualquer ordem antes de clicking the merge button.
           </p>
         </details>
       </div>
@@ -487,7 +500,7 @@
       {
         "@context": "https://schema.org",
         "@type": "SoftwareApplication",
-        "name": "Merge PDF - FastFormat",
+        "name": "Juntar Pdf - FastFormat",
         "applicationCategory": "PDF Merger Tool",
         "operatingSystem": "Any - Web Browser",
         "offers": {
@@ -496,12 +509,12 @@
           "priceCurrency": "USD"
         },
         "featureList": [
-          "Merge multiple PDFs into one",
-          "Drag and drop to reorder files",
-          "Select specific pages to merge",
-          "Page-level merging",
-          "Batch PDF combining",
-          "No file limits"
+          "Junte vários PDFs em um",
+          "Arraste e solte para reordenar os arquivos",
+          "Selecione páginas específicas para juntar",
+          "Mesclagem a nível de página",
+          "Combinação de PDF em lote",
+          "Sem limites de arquivos"
         ]
       }
     </script>
@@ -509,32 +522,32 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "HowTo",
-        "name": "How to Merge PDF Files Online",
-        "description": "Learn how to combine multiple PDF files into a single document",
+        "@type": "Como ",
+        "name": "Como juntar pdf online",
+        "description": "Aprenda como fazer juntar pdf usando o FastFormat",
         "step": [
           {
-            "@type": "HowToStep",
+            "@type": "Como Step",
             "position": 1,
             "name": "Upload PDF Files",
-            "text": "Click or drag and drop multiple PDF files"
+            "text": "Click or arraste e solte multiple PDF files"
           },
           {
-            "@type": "HowToStep",
+            "@type": "Como Step",
             "position": 2,
             "name": "Arrange Files",
             "text": "Drag files to reorder them or select specific pages to include"
           },
           {
-            "@type": "HowToStep",
+            "@type": "Como Step",
             "position": 3,
-            "name": "Merge PDFs",
-            "text": "Click 'Merge PDFs' to combine all files into one document"
+            "name": "Juntar PDFs",
+            "text": "Click 'Juntar PDFs' to combine all files into one document"
           },
           {
-            "@type": "HowToStep",
+            "@type": "Como Step",
             "position": 4,
-            "name": "Download",
+            "name": "Baixar",
             "text": "Download your merged PDF file"
           }
         ]
@@ -555,7 +568,7 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Merge PDF",
+            "name": "Juntar PDF",
             "item": "https://fastformat.co/pdf/juntar-pdf"
           }
         ]
