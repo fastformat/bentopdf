@@ -66,7 +66,7 @@
     <!-- Mobile Web App -->
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-title" content="Compress PDF" />
+    <meta name="apple-mobile-web-app-title" content="Comprimir PDF" />
 
     <link href="/src/css/styles.css" rel="stylesheet" />
 
@@ -111,19 +111,20 @@
           class="flex items-center gap-2 text-indigo-400 hover:text-indigo-300 mb-6 font-semibold"
         >
           <i data-lucide="arrow-left" class="cursor-pointer"></i>
-          <span class="cursor-pointer" data-i18n="tools.backToTools">
-            Back to Tools
-          </span>
+          <span class="cursor-pointer" data-i18n="tools.backToTools"
+            >Voltar para Ferramentas</span
+          >
         </button>
 
         <h1
           class="text-2xl font-bold text-white mb-2"
           data-i18n="tools:compressPdf.name"
         >
-          Compress PDF
+          Comprimir Pdf
         </h1>
         <p class="text-gray-400 mb-6" data-i18n="tools:compressPdf.subtitle">
-          Reduce the file size of your PDF.
+          Converta, edite e processe seus arquivos de forma simples, rápida e
+          100% no navegador.
         </p>
 
         <div
@@ -137,18 +138,20 @@
             ></i>
             <p class="mb-2 text-sm text-gray-400">
               <span class="font-semibold" data-i18n="upload.clickToSelect"
-                >Click to select files</span
+                >Clique para selecionar um arquivo</span
               >
-              <span data-i18n="upload.orDragAndDrop">or drag and drop</span>
+              <span data-i18n="upload.orarraste e solte"
+                >ou arraste e solte</span
+              >
             </p>
             <p
               class="text-xs text-gray-500"
               data-i18n="upload.hints.oneOrMorePdfs"
             >
-              One or more PDF files
+              Um ou mais arquivos PDF
             </p>
             <p class="text-xs text-gray-500" data-i18n="upload.filesNeverLeave">
-              Your files never leave your device.
+              Seus arquivos nunca saem do seu dispositivo.
             </p>
           </div>
           <input
@@ -166,14 +169,14 @@
             class="btn bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-4 py-2 rounded-lg flex items-center gap-2"
           >
             <i data-lucide="plus"></i>
-            <span data-i18n="upload.addMore">Add More Files</span>
+            <span data-i18n="upload.addMore">Adicionar Mais Arquivos</span>
           </button>
           <button
             id="clear-files-btn"
             class="btn bg-gray-700 hover:bg-gray-600 text-white font-semibold px-4 py-2 rounded-lg flex items-center gap-2"
           >
             <i data-lucide="trash-2"></i>
-            <span data-i18n="upload.clearAll">Clear All</span>
+            <span data-i18n="upload.clearAll">Limpar Tudo</span>
           </button>
         </div>
 
@@ -203,8 +206,8 @@
                 <strong>Photon</strong> converts pages to images. Use for
                 photo-heavy/scanned PDFs.
                 <span class="text-yellow-500"
-                  >⚠️ Warning: Text will become non-selectable and links will
-                  stop working.</span
+                  >⚠️ Aviso: O texto não poderá ser selecionado e os links
+                  deixarão de funcionar.</span
                 >
               </p>
             </div>
@@ -359,7 +362,7 @@
           </div>
 
           <button id="process-btn" class="btn-gradient w-full mt-4">
-            Compress PDF
+            Processar
           </button>
         </div>
       </div>
@@ -374,7 +377,7 @@
       >
         <div class="solid-spinner"></div>
         <p id="loader-text" class="text-white text-lg font-medium">
-          Processing...
+          Processando...
         </p>
       </div>
     </div>
@@ -392,7 +395,7 @@
           data-i18n="alert.title"
           data-i18n="alert.title"
         >
-          Alert
+          Alerta
         </h3>
         <p id="alert-message" class="text-gray-300 mb-6"></p>
         <button
@@ -410,7 +413,7 @@
         class="text-2xl md:text-3xl font-bold text-white mb-8 text-center"
         data-i18n="howItWorks.title"
       >
-        How It Works
+        Como Funciona
       </h2>
       <div class="space-y-6">
         <div class="flex items-start gap-4">
@@ -422,7 +425,7 @@
           <div class="flex-1">
             <h3 class="text-lg font-semibold text-white mb-1">Upload PDFs</h3>
             <p class="text-gray-400">
-              Click or drag and drop one or more PDF files
+              Clique ou arraste e solte um ou mais arquivos PDF
             </p>
           </div>
         </div>
@@ -434,10 +437,11 @@
           </div>
           <div class="flex-1">
             <h3 class="text-lg font-semibold text-white mb-1">
-              Choose Algorithm
+              Escolher Algoritmo
             </h3>
             <p class="text-gray-400">
-              Select Condense (recommended) or Photon (for photo-heavy PDFs)
+              Selecione Condense (recomendado) ou Photon (para PDFs pesados com
+              fotos)
             </p>
           </div>
         </div>
@@ -449,10 +453,10 @@
           </div>
           <div class="flex-1">
             <h3 class="text-lg font-semibold text-white mb-1">
-              Select Compression Level
+              Selecionar Nível de Compressão
             </h3>
             <p class="text-gray-400">
-              Pick Light, Balanced, Aggressive, or Extreme compression
+              Escolha a compressão Leve, Equilibrada, Agressiva ou Extrema
             </p>
           </div>
         </div>
@@ -464,10 +468,11 @@
           </div>
           <div class="flex-1">
             <h3 class="text-lg font-semibold text-white mb-1">
-              Customize & Compress
+              Personalizar e Comprimir
             </h3>
             <p class="text-gray-400">
-              Optionally enable grayscale or custom settings, then compress
+              Opcionalmente, ative tons de cinza ou configurações personalizadas
+              e comprima
             </p>
           </div>
         </div>
@@ -478,9 +483,9 @@
             5
           </div>
           <div class="flex-1">
-            <h3 class="text-lg font-semibold text-white mb-1">Download</h3>
+            <h3 class="text-lg font-semibold text-white mb-1">Baixar</h3>
             <p class="text-gray-400">
-              Save your compressed PDFs - up to 90% smaller
+              Salve seus PDFs comprimidos - até 90% menores
             </p>
           </div>
         </div>
@@ -493,29 +498,35 @@
         class="text-2xl md:text-3xl font-bold text-white mb-6 text-center"
         data-i18n="relatedTools.title"
       >
-        Related PDF Tools
+        Ferramentas de PDF Relacionadas
       </h2>
       <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
         <a
           href="juntar-pdf.html"
           class="block bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition-colors border border-gray-700"
         >
-          <h3 class="text-white font-semibold mb-1">Merge Pdf</h3>
-          <p class="text-gray-400 text-sm">Free online merge pdf tool</p>
+          <h3 class="text-white font-semibold mb-1">Juntar PDF</h3>
+          <p class="text-gray-400 text-sm">
+            Ferramenta online grátis para merge pdf
+          </p>
         </a>
         <a
           href="dividir-pdf.html"
           class="block bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition-colors border border-gray-700"
         >
-          <h3 class="text-white font-semibold mb-1">Split Pdf</h3>
-          <p class="text-gray-400 text-sm">Free online split pdf tool</p>
+          <h3 class="text-white font-semibold mb-1">Dividir PDF</h3>
+          <p class="text-gray-400 text-sm">
+            Ferramenta online grátis para split pdf
+          </p>
         </a>
         <a
           href="pdf-para-jpg.html"
           class="block bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition-colors border border-gray-700"
         >
           <h3 class="text-white font-semibold mb-1">Pdf To Jpg</h3>
-          <p class="text-gray-400 text-sm">Free online pdf to jpg tool</p>
+          <p class="text-gray-400 text-sm">
+            Ferramenta online grátis para pdf to jpg
+          </p>
         </a>
       </div>
     </section>
@@ -526,45 +537,47 @@
         class="text-2xl md:text-3xl font-bold text-white mb-6 text-center"
         data-i18n="faq.sectionTitle"
       >
-        Frequently Asked Questions
+        Perguntas Frequentes
       </h2>
       <div class="space-y-4">
         <details class="bg-gray-800 p-5 rounded-lg border border-gray-700">
           <summary
             class="cursor-pointer font-semibold text-white flex items-center justify-between"
           >
-            What's the difference between Condense and Photon?
+            Qual a diferença entre Condense e Photon?
             <i data-lucide="chevron-down" class="w-5 h-5"></i>
           </summary>
           <p class="mt-3 text-gray-400">
-            Condense removes dead-weight, optimizes images, and subsets fonts -
-            best for most PDFs. Photon converts pages to images - ideal for
-            photo-heavy/scanned PDFs but makes text non-selectable.
+            O Condense remove peso morto, otimiza imagens e recorta fontes -
+            melhor para a maioria dos PDFs. O Photon converte páginas em imagens
+            - ideal para PDFs digitalizados/pesados com fotos, mas torna o texto
+            não selecionável.
           </p>
         </details>
         <details class="bg-gray-800 p-5 rounded-lg border border-gray-700">
           <summary
             class="cursor-pointer font-semibold text-white flex items-center justify-between"
           >
-            Which compression level should I use?
+            Qual nível de compressão devo usar?
             <i data-lucide="chevron-down" class="w-5 h-5"></i>
           </summary>
           <p class="mt-3 text-gray-400">
-            Balanced (recommended) offers great size reduction with minimal
-            quality loss. Use Light to preserve maximum quality, Aggressive for
-            smaller files, or Extreme for maximum compression.
+            Equilibrado (recomendado) oferece ótima redução de tamanho com
+            mínima perda de qualidade. Use Leve para preservar a qualidade
+            máxima, Agressiva para arquivos menores ou Extrema para compressão
+            máxima.
           </p>
         </details>
         <details class="bg-gray-800 p-5 rounded-lg border border-gray-700">
           <summary
             class="cursor-pointer font-semibold text-white flex items-center justify-between"
           >
-            Are there file size limits?
+            Existem limites de tamanho de arquivo?
             <i data-lucide="chevron-down" class="w-5 h-5"></i>
           </summary>
           <p class="mt-3 text-gray-400">
-            No limits! Compress as many PDFs as you need, of any size,
-            completely free.
+            Sem limites! Comprima quantos PDFs precisar, de qualquer tamanho,
+            totalmente grátis.
           </p>
         </details>
       </div>
@@ -582,7 +595,7 @@
       {
         "@context": "https://schema.org",
         "@type": "SoftwareApplication",
-        "name": "Compress PDF - FastFormat",
+        "name": "Comprimir Pdf - FastFormat",
         "applicationCategory": "PDF Compression Tool",
         "operatingSystem": "Any - Web Browser",
         "offers": {
@@ -591,12 +604,12 @@
           "priceCurrency": "USD"
         },
         "featureList": [
-          "Reduce PDF file size",
-          "Multiple compression algorithms",
-          "Batch processing",
-          "No file size limits",
-          "Condense algorithm for smart compression",
-          "Photon algorithm for image-heavy PDFs"
+          "Reduzir tamanho do arquivo PDF",
+          "Múltiplos algoritmos de compressão",
+          "Processamento em lote",
+          "Sem limites de tamanho de arquivo",
+          "Algoritmo Condense para compressão inteligente",
+          "Algoritmo Photon para PDFs com muitas imagens"
         ]
       }
     </script>
@@ -604,33 +617,33 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "HowTo",
-        "name": "How to Compress PDF Files Online Free",
-        "description": "Learn how to compress PDF files to reduce size while maintaining quality",
+        "@type": "Como ",
+        "name": "Como comprimir pdf online",
+        "description": "Aprenda como fazer comprimir pdf usando o FastFormat",
         "step": [
           {
-            "@type": "HowToStep",
+            "@type": "Como Step",
             "position": 1,
-            "name": "Upload Your PDF",
-            "text": "Click or drag and drop your PDF file into the upload area"
+            "name": "Envie seu PDF",
+            "text": "Clique ou arraste e solte seu arquivo PDF na área de envio"
           },
           {
-            "@type": "HowToStep",
+            "@type": "Como Step",
             "position": 2,
-            "name": "Choose Compression Level",
-            "text": "Select your desired compression level: Light, Balanced, Aggressive, or Extreme"
+            "name": "Escolha o Nível de Compressão",
+            "text": "Selecione o nível de compressão desejado: Leve, Equilibrado, Agressivo ou Extremo"
           },
           {
-            "@type": "HowToStep",
+            "@type": "Como Step",
             "position": 3,
-            "name": "Select Algorithm",
-            "text": "Choose Condense (recommended) or Photon algorithm based on your PDF type"
+            "name": "Selecione o Algoritmo",
+            "text": "Escolha o algoritmo Condense (recomendado) ou Photon com base no seu tipo de PDF"
           },
           {
-            "@type": "HowToStep",
+            "@type": "Como Step",
             "position": 4,
-            "name": "Compress and Download",
-            "text": "Click 'Compress PDF' and download your optimized file"
+            "name": "Comprimir e Baixar",
+            "text": "Clique em 'Comprimir PDF' e baixe seu arquivo otimizado"
           }
         ]
       }
@@ -650,7 +663,7 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Compress PDF",
+            "name": "Comprimir PDF",
             "item": "https://fastformat.co/pdf/comprimir-pdf"
           }
         ]
