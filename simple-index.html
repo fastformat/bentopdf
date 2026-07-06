@@ -5,15 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Primary Meta Tags -->
-    <title>Ferramentas de PDF Grátis Online | FastFormat</title>
+    <title>
+      Ferramentas de PDF Grátis: Juntar, Comprimir e Converter | FastFormat
+    </title>
     <link rel="canonical" href="https://fastformat.co/pdf/" />
     <meta
       name="title"
-      content="Ferramentas de PDF Grátis Online | FastFormat"
+      content="Ferramentas de PDF Grátis: Juntar, Comprimir e Converter | FastFormat"
     />
     <meta
       name="description"
-      content="Ferramentas de PDF grátis online: juntar, dividir, comprimir e converter PDF. 100% no navegador, sem cadastro e sem limite de arquivos."
+      content="Ferramentas de PDF grátis online: juntar PDF, comprimir PDF, converter PDF em Word, Word para PDF, editar PDF e transformar imagens em PDF. 100% no navegador."
     />
 
     <!-- Mobile Web App -->
@@ -45,6 +47,50 @@
       href="/images/apple-touch-icon.png"
     />
     <link rel="icon" href="/favicon.ico" sizes="32x32" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Ferramentas de PDF grátis FastFormat",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Web",
+        "url": "https://fastformat.co/pdf/",
+        "description": "Ferramentas gratuitas para juntar PDF, comprimir PDF, converter PDF em Word, converter Word para PDF e editar PDF no navegador.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "BRL"
+        },
+        "hasPart": [
+          {
+            "@type": "WebPage",
+            "name": "Juntar PDF",
+            "url": "https://fastformat.co/pdf/juntar-pdf"
+          },
+          {
+            "@type": "WebPage",
+            "name": "Comprimir PDF",
+            "url": "https://fastformat.co/pdf/comprimir-pdf"
+          },
+          {
+            "@type": "WebPage",
+            "name": "PDF para Word",
+            "url": "https://fastformat.co/pdf/pdf-para-word"
+          },
+          {
+            "@type": "WebPage",
+            "name": "Word para PDF",
+            "url": "https://fastformat.co/pdf/word-para-pdf"
+          },
+          {
+            "@type": "WebPage",
+            "name": "Editar PDF",
+            "url": "https://fastformat.co/pdf/editar-pdf"
+          }
+        ]
+      }
+    </script>
 
     <link href="src/css/styles.css" rel="stylesheet" />
   </head>
@@ -132,14 +178,95 @@
     <div id="app" class="min-h-screen container mx-auto p-4 md:p-8">
       <!-- Simple Mode Header -->
       <div id="tools-header" class="text-center mb-12 pt-8">
-        <h1 class="text-3xl md:text-4xl font-bold text-white mb-3">PDF</h1>
-        <p class="text-gray-400" data-i18n="simpleMode.subtitle">
-          Converta, edite e processe seus arquivos de forma simples, rápida e
-          100% no navegador.
+        <h1 class="text-3xl md:text-4xl font-bold text-white mb-3">
+          Ferramentas de PDF grátis online
+        </h1>
+        <p
+          class="text-gray-400 max-w-2xl mx-auto"
+          data-i18n="simpleMode.subtitle"
+        >
+          Junte, comprima, converta e edite arquivos PDF direto no navegador,
+          sem cadastro e sem enviar seus documentos para um servidor.
         </p>
       </div>
 
       <div id="grid-view">
+        <section class="mb-10" aria-labelledby="popular-pdf-tools-title">
+          <div
+            class="flex flex-col gap-2 md:flex-row md:items-end md:justify-between"
+          >
+            <div>
+              <h2
+                id="popular-pdf-tools-title"
+                class="text-lg font-semibold text-white"
+              >
+                Ferramentas de PDF mais usadas
+              </h2>
+              <p class="mt-1 text-sm text-gray-400">
+                Atalhos para as tarefas com maior procura: juntar, comprimir,
+                converter e editar PDF.
+              </p>
+            </div>
+            <a
+              href="https://fastformat.co/?utm_source=pdf-tools&utm_medium=hub-contextual-link"
+              class="text-sm font-semibold text-indigo-300 hover:text-indigo-200"
+            >
+              Formatar TCC em ABNT
+              <span aria-hidden="true">→</span>
+            </a>
+          </div>
+
+          <div
+            class="mt-5 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-5"
+          >
+            <a
+              href="{{baseUrl}}juntar-pdf"
+              class="rounded-lg border border-gray-700 bg-gray-900 p-4 text-left transition-colors hover:border-indigo-500 hover:bg-gray-800"
+            >
+              <h3 class="font-semibold text-white">Juntar PDF</h3>
+              <p class="mt-1 text-sm text-gray-400">
+                Una vários PDFs em um único arquivo.
+              </p>
+            </a>
+            <a
+              href="{{baseUrl}}comprimir-pdf"
+              class="rounded-lg border border-gray-700 bg-gray-900 p-4 text-left transition-colors hover:border-indigo-500 hover:bg-gray-800"
+            >
+              <h3 class="font-semibold text-white">Comprimir PDF</h3>
+              <p class="mt-1 text-sm text-gray-400">
+                Reduza o tamanho do PDF para enviar ou entregar.
+              </p>
+            </a>
+            <a
+              href="{{baseUrl}}pdf-para-word"
+              class="rounded-lg border border-gray-700 bg-gray-900 p-4 text-left transition-colors hover:border-indigo-500 hover:bg-gray-800"
+            >
+              <h3 class="font-semibold text-white">PDF para Word</h3>
+              <p class="mt-1 text-sm text-gray-400">
+                Converta PDF em documento editável.
+              </p>
+            </a>
+            <a
+              href="{{baseUrl}}word-para-pdf"
+              class="rounded-lg border border-gray-700 bg-gray-900 p-4 text-left transition-colors hover:border-indigo-500 hover:bg-gray-800"
+            >
+              <h3 class="font-semibold text-white">Word para PDF</h3>
+              <p class="mt-1 text-sm text-gray-400">
+                Transforme DOCX em PDF antes da entrega.
+              </p>
+            </a>
+            <a
+              href="{{baseUrl}}editar-pdf"
+              class="rounded-lg border border-gray-700 bg-gray-900 p-4 text-left transition-colors hover:border-indigo-500 hover:bg-gray-800"
+            >
+              <h3 class="font-semibold text-white">Editar PDF</h3>
+              <p class="mt-1 text-sm text-gray-400">
+                Anote, destaque e ajuste seu arquivo.
+              </p>
+            </a>
+          </div>
+        </section>
+
         <div class="mb-8 max-w-lg mx-auto">
           <div class="relative">
             <span class="absolute inset-y-0 left-0 flex items-center pl-3">
@@ -301,15 +428,7 @@
               Todos os direitos reservados.{{/if}}
             </p>
             <p class="text-gray-500 text-xs mt-2">
-              Baseado no
-              <a
-                href="https://github.com/alam00000/bentopdf"
-                class="underline hover:text-indigo-400"
-                target="_blank"
-                rel="noopener noreferrer"
-                >BentoPDF</a
-              >
-              (AGPL-3.0) ·
+              Baseado no BentoPDF ·
               <a
                 href="https://github.com/fastformat/bentopdf"
                 class="underline hover:text-indigo-400"
