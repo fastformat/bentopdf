@@ -7,6 +7,10 @@ import {
 } from './i18n';
 
 export const createLanguageSwitcher = (): HTMLElement => {
+  // pt-only: seletor de idioma desativado
+  const _off = document.createElement('span');
+  _off.style.display = 'none';
+  return _off;
   const currentLang = getLanguageFromUrl();
 
   const container = document.createElement('div');

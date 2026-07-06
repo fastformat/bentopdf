@@ -12,11 +12,11 @@
   },
   "convertToPdf": "Converter para PDF",
   "pdfMultiTool": {
-    "name": "Multiferramenta PDF",
+    "name": "Ferramentas PDF",
     "subtitle": "Mesclar, dividir, organizar, excluir, girar, adicionar páginas em branco, extrair e duplicar em uma única interface."
   },
   "mergePdf": {
-    "name": "Mesclar PDF",
+    "name": "Juntar PDF",
     "subtitle": "Combine vários PDFs em um único arquivo. Preserva os favoritos (bookmarks).",
     "retainPageLabels": "Manter os rótulos de página originais de cada ficheiro",
     "retainPageLabelsHint": "Desligado (padrão): o PDF mesclado usa numeração natural 1–N. Ligado: os rótulos de página originais de cada ficheiro são preservados (pode produzir rótulos duplicados)."
@@ -52,7 +52,7 @@
     "compressButton": "Comprimir PDF"
   },
   "pdfEditor": {
-    "name": "Editor de PDF",
+    "name": "Editor PDF",
     "subtitle": "Anotar, destacar, redigir, comentar, adicionar formas/imagens, pesquisar e visualizar PDFs."
   },
   "jpgToPdf": {
@@ -68,7 +68,7 @@
     "subtitle": "Corte as margens de cada página do seu PDF."
   },
   "extractPages": {
-    "name": "Extrair Páginas",
+    "name": "Extrair Paginas PDF",
     "subtitle": "Salve uma seleção de páginas como novos arquivos."
   },
   "duplicateOrganize": {
@@ -77,7 +77,7 @@
     "saveChanges": "Salvar alterações"
   },
   "deletePages": {
-    "name": "Excluir Páginas",
+    "name": "Excluir Paginas PDF",
     "subtitle": "Remova páginas específicas do seu documento."
   },
   "editBookmarks": {
@@ -92,7 +92,7 @@
     "orDragHere": "ou arraste aqui"
   },
   "tableOfContents": {
-    "name": "Sumário",
+    "name": "Sumario PDF",
     "subtitle": "Gere uma página de sumário a partir dos favoritos do PDF.",
     "titleLabel": "Título do Sumário",
     "fontSize": "Tamanho da fonte",
@@ -108,11 +108,11 @@
     "workerErrorOccurred": "Ocorreu erro de worker. Verifique o console para detalhes."
   },
   "pageNumbers": {
-    "name": "Números de Página",
+    "name": "Numerar Paginas PDF",
     "subtitle": "Insira números de página no seu documento."
   },
   "addPageLabels": {
-    "name": "Adicionar rótulos de página",
+    "name": "Rotular Paginas PDF",
     "subtitle": "Aplique rótulos de página PDF com números romanos, prefixos e valores iniciais personalizados.",
     "uploadHint": "Arquivo PDF",
     "howLabelsWorkTitle": "Como os rótulos funcionam",
@@ -171,24 +171,24 @@
     }
   },
   "batesNumbering": {
-    "name": "Numeração Bates",
+    "name": "Numeracao Bates PDF",
     "subtitle": "Adicionar números Bates sequenciais em um ou mais arquivos PDF."
   },
   "addWatermark": {
-    "name": "Adicionar Marca d'Água",
+    "name": "Inserir Marca D Agua PDF",
     "subtitle": "Carimbe texto ou uma imagem sobre as páginas do seu PDF.",
     "applyToAllPages": "Aplicar a todas as páginas"
   },
   "headerFooter": {
-    "name": "Cabeçalho e Rodapé",
+    "name": "Cabecalho e Rodape PDF",
     "subtitle": "Adicione texto no topo e no final das páginas."
   },
   "invertColors": {
-    "name": "Inverter Cores",
+    "name": "Inverter Cores PDF",
     "subtitle": "Crie uma versão em \"modo escuro\" do seu PDF."
   },
   "scannerEffect": {
-    "name": "Efeito Scanner",
+    "name": "Efeito de Scanner PDF",
     "subtitle": "Faça seu PDF parecer um documento digitalizado.",
     "scanSettings": "Configurações de Digitalização",
     "colorspace": "Espaço de Cor",
@@ -205,7 +205,7 @@
     "processButton": "Aplicar Efeito Scanner"
   },
   "adjustColors": {
-    "name": "Ajustar Cores",
+    "name": "Ajustar Cores PDF",
     "subtitle": "Ajuste brilho, contraste, saturação e mais no seu PDF.",
     "colorSettings": "Configurações de Cor",
     "brightness": "Brilho",
@@ -219,7 +219,7 @@
     "processButton": "Aplicar Ajustes de Cor"
   },
   "backgroundColor": {
-    "name": "Cor de Fundo",
+    "name": "Cor de Fundo PDF",
     "subtitle": "Altere a cor de fundo do seu PDF."
   },
   "changeTextColor": {
@@ -227,7 +227,7 @@
     "subtitle": "Altere a cor do texto no seu PDF."
   },
   "addStamps": {
-    "name": "Adicionar Carimbos",
+    "name": "Carimbar PDF",
     "subtitle": "Adicione carimbos de imagem ao seu PDF usando a barra de ferramentas de anotação.",
     "usernameLabel": "Nome do Usuário no Carimbo",
     "usernamePlaceholder": "Digite seu nome (para os carimbos)",
@@ -235,7 +235,7 @@
     "saveButton": "Salvar PDF carimbado"
   },
   "removeAnnotations": {
-    "name": "Remover Anotações",
+    "name": "Remover Anotacoes PDF",
     "subtitle": "Remova comentários, destaques e links."
   },
   "pdfFormFiller": {
@@ -252,7 +252,7 @@
     "createBlankPdf": "Criar PDF em branco"
   },
   "removeBlankPages": {
-    "name": "Remover Páginas em Branco",
+    "name": "Remover Paginas em Branco PDF",
     "subtitle": "Detecte e exclua automaticamente páginas em branco.",
     "sensitivityHint": "Maior = mais rigoroso, apenas páginas totalmente em branco. Menor = permite páginas com algum conteúdo."
   },
@@ -265,7 +265,7 @@
     "subtitle": "Crie um PDF a partir de uma ou mais imagens PNG."
   },
   "webpToPdf": {
-    "name": "WebP para PDF",
+    "name": "WEBP para PDF",
     "subtitle": "Crie um PDF a partir de uma ou mais imagens WebP."
   },
   "svgToPdf": {
@@ -351,7 +351,7 @@
     }
   },
   "pdfToWebp": {
-    "name": "PDF para WebP",
+    "name": "PDF para WEBP",
     "subtitle": "Converta cada página do PDF em uma imagem WebP.",
     "imageQuality": "Qualidade da imagem",
     "imageQualityExplanation": "Maior qualidade = arquivo maior",
@@ -433,7 +433,7 @@
     }
   },
   "pdfToGreyscale": {
-    "name": "PDF para Tons de Cinza",
+    "name": "PDF Preto e Branco",
     "subtitle": "Converta todas as cores para preto e branco."
   },
   "pdfToJson": {
@@ -455,7 +455,7 @@
     }
   },
   "ocrPdf": {
-    "name": "OCR para PDF",
+    "name": "OCR PDF",
     "subtitle": "Torne um PDF pesquisável e copiável (reconhecimento de texto).",
     "languagesInDocument": "Idiomas no documento",
     "searchLanguagesPlaceholder": "Buscar idiomas...",
@@ -509,33 +509,33 @@
     "multiLanguageSupportDescription": "Selecione vários idiomas para documentos com conteúdo em idiomas mistos."
   },
   "alternateMerge": {
-    "name": "Alternar e Misturar Páginas",
+    "name": "Intercalar Paginas PDF",
     "subtitle": "Mescle PDFs alternando as páginas de cada arquivo. Preserva os favoritos.",
     "retainPageLabels": "Manter os rótulos de página originais de cada ficheiro",
     "retainPageLabelsHint": "Desligado (padrão): o PDF mesclado usa numeração natural 1–N. Ligado: os rótulos de página originais de cada ficheiro são preservados (pode produzir rótulos duplicados)."
   },
   "addAttachments": {
-    "name": "Adicionar Anexos",
+    "name": "Anexar Arquivo PDF",
     "subtitle": "Incorpore um ou mais arquivos dentro do seu PDF."
   },
   "extractAttachments": {
-    "name": "Extrair Anexos",
+    "name": "Extrair Anexos PDF",
     "subtitle": "Extraia todos os arquivos incorporados de PDF(s) como um ZIP."
   },
   "editAttachments": {
-    "name": "Editar Anexos",
+    "name": "Editar Anexos PDF",
     "subtitle": "Visualize ou remova anexos do seu PDF."
   },
   "dividePages": {
-    "name": "Dividir Páginas",
+    "name": "Dividir Paginas PDF",
     "subtitle": "Divida as páginas horizontalmente ou verticalmente."
   },
   "addBlankPage": {
-    "name": "Adicionar Página em Branco",
+    "name": "Adicionar Pagina em Branco PDF",
     "subtitle": "Insira uma página vazia em qualquer lugar do seu PDF."
   },
   "reversePages": {
-    "name": "Inverter Páginas",
+    "name": "Inverter Paginas PDF",
     "subtitle": "Inverta a ordem de todas as páginas do seu documento."
   },
   "rotatePdf": {
@@ -543,11 +543,11 @@
     "subtitle": "Gire as páginas em incrementos de 90 graus."
   },
   "rotateCustom": {
-    "name": "Rotacionar em Graus Customizáveis",
+    "name": "Rotacionar Paginas PDF",
     "subtitle": "Rotaciona páginas em qualquer ângulo customizado."
   },
   "nUpPdf": {
-    "name": "PDF N-Up",
+    "name": "Varias Paginas Por Folha PDF",
     "subtitle": "Organize várias páginas em uma única folha de impressão."
   },
   "combineToSinglePage": {
@@ -555,11 +555,11 @@
     "subtitle": "Costure todas as páginas em um único fluxo contínuo."
   },
   "viewMetadata": {
-    "name": "Ver Metadados",
+    "name": "Ver Metadados PDF",
     "subtitle": "Inspecione as propriedades ocultas do seu PDF."
   },
   "editMetadata": {
-    "name": "Editar Metadados",
+    "name": "Editar Metadados PDF",
     "subtitle": "Altere o autor, título e outras propriedades."
   },
   "pdfsToZip": {
@@ -567,7 +567,7 @@
     "subtitle": "Empacote vários arquivos PDF em um arquivo compactado ZIP."
   },
   "comparePdfs": {
-    "name": "Comparar PDFs",
+    "name": "Comparar PDF",
     "subtitle": "Compare dois PDFs lado a lado.",
     "firstPdf": "Primeiro PDF",
     "secondPdf": "Segundo PDF",
@@ -611,23 +611,23 @@
     "loadError": "Não foi possível carregar o PDF. Ele pode estar corrompido ou protegido por senha."
   },
   "posterizePdf": {
-    "name": "Posterizar PDF",
+    "name": "Poster PDF",
     "subtitle": "Divida uma página grande em várias páginas menores."
   },
   "fixPageSize": {
-    "name": "Ajustar Tamanho da Página",
+    "name": "Ajustar Tamanho da Pagina PDF",
     "subtitle": "Padronize todas as páginas para um tamanho uniforme."
   },
   "linearizePdf": {
-    "name": "Linearizar PDF",
+    "name": "Otimizar PDF para Web",
     "subtitle": "Otimize o PDF para visualização rápida na web."
   },
   "pageDimensions": {
-    "name": "Dimensões da Página",
+    "name": "Dimensoes da Pagina PDF",
     "subtitle": "Analise o tamanho, orientação e unidades das páginas."
   },
   "removeRestrictions": {
-    "name": "Remover Restrições",
+    "name": "Desbloquear PDF",
     "subtitle": "Remova proteção por senha e restrições de segurança de arquivos assinados digitalmente."
   },
   "repairPdf": {
@@ -635,27 +635,27 @@
     "subtitle": "Recupere dados de arquivos PDF corrompidos ou danificados."
   },
   "encryptPdf": {
-    "name": "Criptografar PDF",
+    "name": "Senha em PDF",
     "subtitle": "Bloqueie seu PDF adicionando uma senha."
   },
   "sanitizePdf": {
-    "name": "Sanitizar PDF",
+    "name": "Limpar Metadados PDF",
     "subtitle": "Remova metadados, anotações, scripts e outros dados ocultos."
   },
   "decryptPdf": {
-    "name": "Descriptografar PDF",
+    "name": "Remover Senha PDF",
     "subtitle": "Desbloqueie o PDF removendo a proteção por senha."
   },
   "flattenPdf": {
-    "name": "Achatar PDF (Flatten)",
+    "name": "Achatar PDF",
     "subtitle": "Torne os campos de formulário e anotações não editáveis."
   },
   "removeMetadata": {
-    "name": "Remover Metadados",
+    "name": "Remover Metadados PDF",
     "subtitle": "Limpe dados ocultos do seu PDF."
   },
   "changePermissions": {
-    "name": "Alterar Permissões",
+    "name": "Alterar Permissoes PDF",
     "subtitle": "Defina ou altere as permissões de usuário em um PDF."
   },
   "odtToPdf": {
@@ -689,13 +689,13 @@
     "convertButton": "Converter para PDF"
   },
   "powerpointToPdf": {
-    "name": "PowerPoint para PDF",
+    "name": "Powerpoint para PDF",
     "subtitle": "Converte apresentações PowerPoint (PPTX, PPT, ODP) para PDF. Suporta múltiplos arquivos.",
     "acceptedFormats": "Arquivos PPTX, PPT, ODP",
     "convertButton": "Converter para PDF"
   },
   "markdownToPdf": {
-    "name": "Markdown para PDF",
+    "name": "MD para PDF",
     "subtitle": "Escreva ou cole Markdown e exporte como um belo formato PDF.",
     "paneMarkdown": "Markdown",
     "panePreview": "Pré-visualizar",
@@ -715,7 +715,7 @@
     "optTypographer": "Tipógrafo (aspas inteligentes, etc.)"
   },
   "pdfBooklet": {
-    "name": "PDF Booklet",
+    "name": "Booklet PDF",
     "subtitle": "Reordena páginas para impressão de livreto frente e verso. Dobre e grampeie para criar um livreto.",
     "howItWorks": "Como funciona:",
     "step1": "Faça o upload de um arquivo PDF.",
@@ -809,7 +809,7 @@
     "convertButton": "Converter para PDF"
   },
   "vsdToPdf": {
-    "name": "VSD para PDF",
+    "name": "Visio para PDF",
     "subtitle": "Converte Microsoft Visio (VSD, VSDX) para PDF. Suporta múltiplos arquivos.",
     "acceptedFormats": "Arquivos VSD, VSDX",
     "convertButton": "Converter para PDF"
@@ -837,7 +837,7 @@
     "subtitle": "Extrai tabelas do PDF e converte em Excel (XLSX)."
   },
   "pdfToText": {
-    "name": "PDF para Texto",
+    "name": "Extrair Texto de PDF",
     "subtitle": "Extrai texto de arquivos PDF e salva como texto simples (.txt). Suporta múltiplos arquivos.",
     "noteLabel": "Nota:",
     "noteText": "Esta ferramenta funciona APENAS com PDFs criados digitalmente. Para documentos digitalizados ou PDFs baseados em imagens, use nossa ferramenta OCR PDF.",
@@ -936,7 +936,7 @@
     "subtitle": "Verifique assinaturas digitais em seus arquivos PDF. Verifique a validade do certificado e a integridade do documento."
   },
   "timestampPdf": {
-    "name": "Carimbo de tempo PDF",
+    "name": "Timestamp PDF",
     "pageTitle": "Carimbo de tempo PDF grátis online - RFC 3161 | BentoPDF",
     "subtitle": "Adicione um carimbo de tempo RFC 3161 ao seu PDF usando um servidor TSA confiável. Prova que o seu documento existia num momento específico. Sem necessidade de certificado.",
     "tsaSectionTitle": "Servidor de carimbo de tempo (TSA)",
@@ -951,11 +951,11 @@
     "convertButton": "Converter para PDF"
   },
   "fontToOutline": {
-    "name": "Fonte para Contorno",
+    "name": "Vetorizar Fontes PDF",
     "subtitle": "Converta todas as fontes em contornos vetoriais para renderização consistente em todos os dispositivos."
   },
   "deskewPdf": {
-    "name": "Desinclinar PDF",
+    "name": "Endireitar PDF",
     "subtitle": "Endireite automaticamente páginas digitalizadas inclinadas usando OpenCV."
   },
   "pdfToWord": {
@@ -963,7 +963,7 @@
     "subtitle": "Converter arquivos PDF em documentos Word editáveis."
   },
   "extractImages": {
-    "name": "Extrair Imagens",
+    "name": "Extrair Imagens PDF",
     "subtitle": "Extrair todas as imagens incorporadas dos seus arquivos PDF."
   },
   "pdfToMarkdown": {
@@ -987,7 +987,7 @@
     "subtitle": "Converter PDF em PDF baseado em imagens. Achatar camadas e remover texto selecionável."
   },
   "pdfWorkflow": {
-    "name": "Construtor de fluxo de trabalho PDF",
+    "name": "Fluxo de Trabalho PDF",
     "subtitle": "Crie pipelines de processamento PDF personalizados com um editor visual de nós.",
     "nodes": "Nós",
     "searchNodes": "Pesquisar nós...",
