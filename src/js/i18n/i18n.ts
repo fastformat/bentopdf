@@ -63,6 +63,7 @@ export const getLanguageFromUrl = (): SupportedLanguage => {
     path = '/' + path;
   }
 
+  // Priority 1: URL language match
   const langMatch = path.match(
     /^\/(en|ar|fr|es|de|zh|zh-TW|vi|tr|id|it|pt|nl|be|da|ko|sv|ru|ja|uk|sk)(?:\/|$)/
   );
@@ -73,6 +74,13 @@ export const getLanguageFromUrl = (): SupportedLanguage => {
     return langMatch[1] as SupportedLanguage;
   }
 
+  // Priority 2: Environment variable (VITE_DEFAULT_LANGUAGE)
+  const envLang = import.meta.env?.VITE_DEFAULT_LANGUAGE;
+  if (envLang && supportedLanguages.includes(envLang as SupportedLanguage)) {
+    return envLang as SupportedLanguage;
+  }
+
+  // Priority 3: Stored language
   const storedLang = localStorage.getItem('i18nextLng');
   if (
     storedLang &&
@@ -81,7 +89,7 @@ export const getLanguageFromUrl = (): SupportedLanguage => {
     return storedLang as SupportedLanguage;
   }
 
-  // Check browser language preferences
+  // Priority 4: Browser language preferences
   if (typeof navigator !== 'undefined' && navigator.languages) {
     for (const lang of navigator.languages) {
       if (supportedLanguages.includes(lang as SupportedLanguage)) {
@@ -93,11 +101,6 @@ export const getLanguageFromUrl = (): SupportedLanguage => {
         return primaryLang as SupportedLanguage;
       }
     }
-  }
-
-  const envLang = import.meta.env?.VITE_DEFAULT_LANGUAGE;
-  if (envLang && supportedLanguages.includes(envLang as SupportedLanguage)) {
-    return envLang as SupportedLanguage;
   }
 
   return 'en';

@@ -52,7 +52,7 @@
       data-simple-nav="true"
     >
       <div class="container mx-auto px-4">
-        <div class="flex justify-start items-center h-16">
+        <div class="flex justify-between items-center h-16">
           <div class="flex-shrink-0 flex items-center cursor-pointer">
             <img
               src="{{baseUrl}}{{#if brandLogo}}{{brandLogo}}{{else}}images/favicon-no-bg.svg{{/if}}"
@@ -65,9 +65,65 @@
               >
             </span>
           </div>
+
+          <!-- Desktop Navigation -->
+          <div class="hidden md:flex items-center space-x-6">
+            <a
+              href="https://fastformat.co/?utm_source=pdf-tools&utm_medium=header-cta"
+              class="inline-flex items-center gap-1.5 text-sm font-semibold bg-indigo-600 text-white px-4 py-1.5 rounded-full hover:bg-indigo-500 transition-colors"
+            >
+              ✍️ Formatar TCC em ABNT
+            </a>
+            <a
+              href="https://github.com/fastformat/bentopdf/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-1.5 text-sm font-medium bg-gray-800 text-gray-200 border border-gray-600 pl-2.5 pr-3 py-1 rounded-full transition-colors duration-200 shadow-sm hover:shadow-md hover:bg-gray-700"
+            >
+              <i data-lucide="github" class="w-4 h-4"></i>
+              <span class="sr-only">GitHub</span>
+            </a>
+          </div>
+
+          <!-- Mobile Hamburger Button -->
+          <div class="md:hidden flex items-center gap-4">
+            <a
+              href="https://github.com/fastformat/bentopdf/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-1.5 text-sm font-medium bg-gray-800 text-gray-200 border border-gray-600 pl-2.5 pr-3 py-1 rounded-full transition-colors duration-200 shadow-sm hover:shadow-md hover:bg-gray-700"
+            >
+              <i data-lucide="github" class="w-4 h-4"></i>
+            </a>
+            <button
+              type="button"
+              class="text-gray-400 hover:text-white p-2 rounded-md"
+              id="mobile-menu-button"
+            >
+              <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+          </div>
         </div>
       </div>
     </nav>
+
+    <!-- CTA Banner -->
+    <div class="bg-gradient-to-r from-indigo-600 to-purple-600 py-3">
+      <div class="container mx-auto px-4">
+        <div class="flex items-center justify-center gap-3 text-white text-sm">
+          <span
+            >📄 Terminou de ajustar seu PDF? Agora formate o texto em ABNT</span
+          >
+          <a
+            href="https://fastformat.co/?utm_source=pdf-tools&utm_medium=banner-cta"
+            class="inline-flex items-center gap-1 font-semibold bg-white text-indigo-600 px-3 py-1 rounded-full hover:bg-gray-100 transition-colors"
+          >
+            Conhecer o FastFormat
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+      </div>
+    </div>
 
     <div id="app" class="min-h-screen container mx-auto p-4 md:p-8">
       <!-- Simple Mode Header -->
@@ -76,7 +132,7 @@
           <span data-i18n="simpleMode.title">PDF Tools</span>
         </h1>
         <p class="text-gray-400" data-i18n="simpleMode.subtitle">
-          Select a tool to get started
+          Selecione uma ferramenta para começar
         </p>
       </div>
 
@@ -90,7 +146,7 @@
               type="text"
               id="search-bar"
               class="w-full pl-10 pr-4 py-3 bg-gray-700 text-white border border-gray-600 rounded-lg focus:ring-indigo-500 focus:border-indigo-500"
-              placeholder="Search for a tool (e.g., 'split', 'organize'...)"
+              placeholder="Buscar ferramenta (ex: 'mesclar', 'organizar'...)"
               data-i18n-placeholder="tools.searchPlaceholder"
             />
             <span
