@@ -68,7 +68,7 @@
     "subtitle": "Corte as margens de cada página do seu PDF."
   },
   "extractPages": {
-    "name": "Extrair Paginas PDF",
+    "name": "Extrair Páginas PDF",
     "subtitle": "Salve uma seleção de páginas como novos arquivos."
   },
   "duplicateOrganize": {
@@ -77,7 +77,7 @@
     "saveChanges": "Salvar alterações"
   },
   "deletePages": {
-    "name": "Excluir Paginas PDF",
+    "name": "Excluir Páginas PDF",
     "subtitle": "Remova páginas específicas do seu documento."
   },
   "editBookmarks": {
@@ -108,11 +108,11 @@
     "workerErrorOccurred": "Ocorreu erro de worker. Verifique o console para detalhes."
   },
   "pageNumbers": {
-    "name": "Numerar Paginas PDF",
+    "name": "Numerar Páginas PDF",
     "subtitle": "Insira números de página no seu documento."
   },
   "addPageLabels": {
-    "name": "Rotular Paginas PDF",
+    "name": "Rotular Páginas PDF",
     "subtitle": "Aplique rótulos de página PDF com números romanos, prefixos e valores iniciais personalizados.",
     "uploadHint": "Arquivo PDF",
     "howLabelsWorkTitle": "Como os rótulos funcionam",
@@ -171,7 +171,7 @@
     }
   },
   "batesNumbering": {
-    "name": "Numeracao Bates PDF",
+    "name": "Numeração Bates PDF",
     "subtitle": "Adicionar números Bates sequenciais em um ou mais arquivos PDF."
   },
   "addWatermark": {
@@ -180,7 +180,7 @@
     "applyToAllPages": "Aplicar a todas as páginas"
   },
   "headerFooter": {
-    "name": "Cabecalho e Rodape PDF",
+    "name": "Cabeçalho e Rodapé PDF",
     "subtitle": "Adicione texto no topo e no final das páginas."
   },
   "invertColors": {
@@ -252,7 +252,7 @@
     "createBlankPdf": "Criar PDF em branco"
   },
   "removeBlankPages": {
-    "name": "Remover Paginas em Branco PDF",
+    "name": "Remover Páginas em Branco PDF",
     "subtitle": "Detecte e exclua automaticamente páginas em branco.",
     "sensitivityHint": "Maior = mais rigoroso, apenas páginas totalmente em branco. Menor = permite páginas com algum conteúdo."
   },
@@ -509,7 +509,7 @@
     "multiLanguageSupportDescription": "Selecione vários idiomas para documentos com conteúdo em idiomas mistos."
   },
   "alternateMerge": {
-    "name": "Intercalar Paginas PDF",
+    "name": "Intercalar Páginas PDF",
     "subtitle": "Mescle PDFs alternando as páginas de cada arquivo. Preserva os favoritos.",
     "retainPageLabels": "Manter os rótulos de página originais de cada ficheiro",
     "retainPageLabelsHint": "Desligado (padrão): o PDF mesclado usa numeração natural 1–N. Ligado: os rótulos de página originais de cada ficheiro são preservados (pode produzir rótulos duplicados)."
@@ -527,15 +527,15 @@
     "subtitle": "Visualize ou remova anexos do seu PDF."
   },
   "dividePages": {
-    "name": "Dividir Paginas PDF",
+    "name": "Dividir Páginas PDF",
     "subtitle": "Divida as páginas horizontalmente ou verticalmente."
   },
   "addBlankPage": {
-    "name": "Adicionar Pagina em Branco PDF",
+    "name": "Adicionar Página em Branco PDF",
     "subtitle": "Insira uma página vazia em qualquer lugar do seu PDF."
   },
   "reversePages": {
-    "name": "Inverter Paginas PDF",
+    "name": "Inverter Páginas PDF",
     "subtitle": "Inverta a ordem de todas as páginas do seu documento."
   },
   "rotatePdf": {
@@ -543,11 +543,11 @@
     "subtitle": "Gire as páginas em incrementos de 90 graus."
   },
   "rotateCustom": {
-    "name": "Rotacionar Paginas PDF",
+    "name": "Rotacionar Páginas PDF",
     "subtitle": "Rotaciona páginas em qualquer ângulo customizado."
   },
   "nUpPdf": {
-    "name": "Varias Paginas Por Folha PDF",
+    "name": "Várias Páginas Por Folha PDF",
     "subtitle": "Organize várias páginas em uma única folha de impressão."
   },
   "combineToSinglePage": {
@@ -615,7 +615,7 @@
     "subtitle": "Divida uma página grande em várias páginas menores."
   },
   "fixPageSize": {
-    "name": "Ajustar Tamanho da Pagina PDF",
+    "name": "Ajustar Tamanho da Página PDF",
     "subtitle": "Padronize todas as páginas para um tamanho uniforme."
   },
   "linearizePdf": {
@@ -623,7 +623,7 @@
     "subtitle": "Otimize o PDF para visualização rápida na web."
   },
   "pageDimensions": {
-    "name": "Dimensoes da Pagina PDF",
+    "name": "Dimensões da Página PDF",
     "subtitle": "Analise o tamanho, orientação e unidades das páginas."
   },
   "removeRestrictions": {
