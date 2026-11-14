@@ -9,7 +9,10 @@
 import { createHash } from 'node:crypto';
 
 export const GA_SCRIPT_ORIGINS = ['https://*.googletagmanager.com'];
+// A `*.` host-source never matches the bare host, and this property sends
+// hits to https://analytics.google.com/g/collect, so it is listed explicitly.
 export const GA_CONNECT_ORIGINS = [
+  'https://analytics.google.com',
   'https://*.google-analytics.com',
   'https://*.analytics.google.com',
   'https://*.googletagmanager.com',
