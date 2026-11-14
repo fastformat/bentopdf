@@ -2,6 +2,11 @@
 import { writeFileSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import {
+  GA_CONNECT_ORIGINS,
+  GA_SCRIPT_ORIGINS,
+  gaInlineHash,
+} from './lib/ga-snippet.mjs';
 
 const repoRoot = join(dirname(fileURLToPath(import.meta.url)), '..');
 
@@ -47,8 +52,18 @@ const corsProxyOrigin =
 const ocrFontOrigin =
   originOf(process.env.VITE_OCR_FONT_BASE_URL) || DEFAULT_OCR_FONT_CDN_ORIGIN;
 
-const scriptOrigins = uniq([...wasmOrigins, ...tesseractOrigins]);
+// Must match the inject-ga plugin in vite.config.ts, which reads the same var.
+const gaId = process.env.VITE_GA_ID;
+const gaScriptSources = gaId ? [...GA_SCRIPT_ORIGINS, gaInlineHash(gaId)] : [];
+const gaConnectOrigins = gaId ? GA_CONNECT_ORIGINS : [];
+
+const scriptOrigins = uniq([
+  ...wasmOrigins,
+  ...tesseractOrigins,
+  ...gaScriptSources,
+]);
 const connectOrigins = uniq([
+  ...gaConnectOrigins,
   ...wasmOrigins,
   ...tesseractOrigins,
   corsProxyOrigin,

@@ -76,3 +76,54 @@ describe('injectIntoToolPage', () => {
     expect(injectIntoToolPage(out, merge, index, BASE)).toBe(out);
   });
 });
+
+describe('injectIntoToolPage: related grid and academic CTA', () => {
+  const pageHtml = `<html><body>
+  <h1>Juntar PDF</h1>
+  <section class="max-w-6xl mx-auto">
+    <h2 data-i18n="relatedTools.title">Ferramentas PDF relacionadas</h2>
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+      <a href="dividir-pdf.html" class="block">Dividir</a>
+      <a href="comprimir-pdf.html" class="block">Comprimir</a>
+    </div>
+  </section>
+  <footer>f</footer></body></html>`;
+  const out = injectIntoToolPage(pageHtml, merge, index, BASE);
+
+  it('centers the related tools row regardless of card count', () => {
+    expect(out).toContain('class="flex flex-wrap justify-center gap-4"');
+    expect(out).not.toContain('lg:grid-cols-6');
+  });
+
+  it('links to signup with UTMs naming the tool page', () => {
+    expect(out).toContain(
+      'href="https://fastformat.co/accounts/signup/?utm_source=pdf_tools&amp;utm_medium=referral&amp;utm_campaign=pdf_academic_cta&amp;utm_content=juntar-pdf"'
+    );
+  });
+
+  it('places the CTA right before the related tools section', () => {
+    expect(out.indexOf('data-academic-cta')).toBeLessThan(
+      out.indexOf('data-i18n="relatedTools.title"')
+    );
+  });
+
+  it('never promises a Word export', () => {
+    const cta = out.slice(
+      out.indexOf('data-academic-cta'),
+      out.indexOf('</section>', out.indexOf('data-academic-cta'))
+    );
+    expect(cta).not.toMatch(/word|docx/i);
+  });
+
+  it('is idempotent', () => {
+    const again = injectIntoToolPage(out, merge, index, BASE);
+    expect(again).toBe(out);
+    expect(again.match(/data-academic-cta/g)).toHaveLength(1);
+  });
+});
+
+it('adds the CTA before the footer when a page has no related section', () => {
+  const out = injectIntoToolPage(toolHtml, merge, index, BASE);
+  expect(out).toContain('data-academic-cta');
+  expect(out.indexOf('data-academic-cta')).toBeLessThan(out.indexOf('<footer'));
+});

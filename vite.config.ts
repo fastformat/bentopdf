@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitest/config';
+import { gaHeadSnippet } from './scripts/lib/ga-snippet.mjs';
 import type { IncomingMessage, ServerResponse } from 'http';
 import http from 'http';
 import https from 'https';
@@ -462,12 +463,7 @@ export default defineConfig(() => {
         transformIndexHtml(html: string) {
           const id = process.env.VITE_GA_ID;
           if (!id) return html;
-          const snippet =
-            '\n    <script async src="https://www.googletagmanager.com/gtag/js?id=' +
-            id +
-            "\"></script>\n    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','" +
-            id +
-            "');</script>\n";
+          const snippet = gaHeadSnippet(id);
           return html.replace('</head>', snippet + '  </head>');
         },
       },

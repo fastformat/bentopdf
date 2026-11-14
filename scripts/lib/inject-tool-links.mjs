@@ -16,6 +16,63 @@ import { relatedTools } from './tool-index.mjs';
 const DIRECTORY_MARKER = 'data-tool-directory';
 const RELATED_MARKER = 'data-related-tools';
 const HUB_LINK_MARKER = 'data-hub-link';
+const CTA_MARKER = 'data-academic-cta';
+
+// The tool pages had no link into the product, so ~2.5k weekly visits could
+// not become signups. UTMs let GA4 attribute the signup to the tool page.
+const SIGNUP_URL = 'https://fastformat.co/accounts/signup/';
+
+function ctaHref(slug) {
+  const params = new URLSearchParams({
+    utm_source: 'pdf_tools',
+    utm_medium: 'referral',
+    utm_campaign: 'pdf_academic_cta',
+    utm_content: slug,
+  });
+  return `${SIGNUP_URL}?${params}`;
+}
+
+function academicCta(slug) {
+  return `<section ${CTA_MARKER} class="max-w-4xl mx-auto px-4 py-8 w-full">
+    <div class="rounded-xl border border-indigo-500/40 bg-indigo-950/40 p-6 md:p-8 text-center">
+      <h2 class="text-xl md:text-2xl font-bold text-white">Esse PDF é do seu TCC?</h2>
+      <p class="mt-2 text-gray-300">
+        O FastFormat formata o trabalho nas normas ABNT: capa, sumário, margens, citações e referências. Você escreve, ele gera o PDF pronto para entregar.
+      </p>
+      <a href="${ctaHref(slug)}" class="mt-5 inline-block rounded-lg bg-indigo-600 px-6 py-3 font-semibold text-white transition-colors hover:bg-indigo-500">
+        Formatar meu trabalho na ABNT
+      </a>
+    </div>
+  </section>`;
+}
+
+/**
+ * The source pages lay related tools on a 6-column grid, but most pages
+ * render 5 cards, which leaves the row hanging to the left. A wrapping flex
+ * row centers any count.
+ */
+function centerRelatedGrid(document) {
+  const title = document.querySelector('[data-i18n="relatedTools.title"]');
+  const grid = title?.nextElementSibling;
+  if (!grid || !grid.className.includes('grid')) return;
+  grid.className = 'flex flex-wrap justify-center gap-4';
+  for (const card of grid.querySelectorAll(':scope > a')) {
+    card.classList.add('w-[calc(50%-0.5rem)]', 'md:w-44');
+  }
+}
+
+function insertCta(document, slug) {
+  if (document.querySelector(`[${CTA_MARKER}]`)) return;
+  const container = document.createElement('div');
+  container.innerHTML = academicCta(slug);
+  const node = container.firstElementChild;
+  const relatedSection = document
+    .querySelector('[data-i18n="relatedTools.title"]')
+    ?.closest('section');
+  if (relatedSection)
+    relatedSection.parentNode.insertBefore(node, relatedSection);
+  else insertBeforeFooter(document, node.outerHTML);
+}
 
 const CARD_CLASS =
   'rounded-lg border border-gray-700 bg-gray-900 p-4 text-left transition-colors hover:border-indigo-500 hover:bg-gray-800';
@@ -113,6 +170,8 @@ export function injectIntoToolPage(html, tool, index, base) {
   const slugs = new Set(index.map((t) => t.slug));
 
   normalizeToolLinks(document, base, slugs);
+  centerRelatedGrid(document);
+  insertCta(document, tool.slug);
 
   // The "back to tools" control is a <button>, invisible to crawlers.
   const backButton = document.querySelector('#back-to-tools');
