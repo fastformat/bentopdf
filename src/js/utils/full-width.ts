@@ -10,7 +10,9 @@ export function initFullWidthMode() {
 }
 
 export function applyFullWidthMode(enabled: boolean) {
-  // Apply to all page uploaders
+  // Full width is the default, so pages ship without the max-width class and
+  // keep it in data-max-width. Removing it after load shifted the uploader on
+  // desktop (CLS 0.14 lab, 0.21 field).
   const pageUploaders = document.querySelectorAll(
     '#tool-uploader, #signature-editor'
   );
@@ -24,7 +26,9 @@ export function applyFullWidthMode(enabled: boolean) {
         !uploader.classList.contains('max-w-4xl') &&
         !uploader.classList.contains('max-w-5xl')
       ) {
-        uploader.classList.add('max-w-2xl');
+        uploader.classList.add(
+          (uploader as HTMLElement).dataset.maxWidth || 'max-w-2xl'
+        );
       }
     }
   });

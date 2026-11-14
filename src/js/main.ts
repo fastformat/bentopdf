@@ -1,3 +1,4 @@
+import { applyFullWidthMode as applyUploaderWidth } from './utils/full-width.js';
 import { categories } from './config/tools.js';
 import { dom, switchView, hideAlert } from './ui.js';
 import { ShortcutsManager } from './logic/shortcuts.js';
@@ -626,23 +627,7 @@ const init = async () => {
       }
     }
 
-    // Apply to all page uploaders
-    const pageUploaders = document.querySelectorAll(
-      '#tool-uploader, #signature-editor'
-    );
-    pageUploaders.forEach((uploader) => {
-      if (enabled) {
-        uploader.classList.remove('max-w-2xl', 'max-w-5xl');
-      } else {
-        // Restore original max-width (most are max-w-2xl, add-stamps is max-w-5xl)
-        if (
-          !uploader.classList.contains('max-w-2xl') &&
-          !uploader.classList.contains('max-w-5xl')
-        ) {
-          uploader.classList.add('max-w-2xl');
-        }
-      }
-    });
+    applyUploaderWidth(enabled);
   }
 
   if (fullWidthToggle) {
