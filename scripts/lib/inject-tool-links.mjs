@@ -184,8 +184,18 @@ export function injectIntoToolPage(html, tool, index, base) {
     backButton.parentNode.insertBefore(link, backButton);
   }
 
+  // Most pages ship their own related-tools section, already crawlable once
+  // normalizeToolLinks rewrote its hrefs. Adding ours too showed two
+  // "related" blocks on the same page, so ours is only the fallback.
+  const hasSourceRelated = document.querySelector(
+    '[data-i18n="relatedTools.title"]'
+  );
   const related = relatedTools(tool, index);
-  if (related.length && !document.querySelector(`[${RELATED_MARKER}]`)) {
+  if (
+    related.length &&
+    !hasSourceRelated &&
+    !document.querySelector(`[${RELATED_MARKER}]`)
+  ) {
     const links = related
       .map(
         (t) => `

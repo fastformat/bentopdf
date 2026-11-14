@@ -139,9 +139,7 @@
               <span class="font-semibold" data-i18n="upload.clickToSelect"
                 >Clique para selecionar um arquivo</span
               >
-              <span data-i18n="upload.orarraste e solte"
-                >ou arraste e solte</span
-              >
+              <span data-i18n="upload.orDragAndDrop">ou arraste e solte</span>
             </p>
             <p
               class="text-xs text-gray-500"
@@ -594,13 +592,13 @@
       {
         "@context": "https://schema.org",
         "@type": "SoftwareApplication",
-        "name": "Comprimir Pdf - FastFormat",
-        "applicationCategory": "PDF Compression Tool",
+        "name": "Comprimir PDF | FastFormat",
+        "applicationCategory": "UtilitiesApplication",
         "operatingSystem": "Any - Web Browser",
         "offers": {
           "@type": "Offer",
           "price": "0",
-          "priceCurrency": "USD"
+          "priceCurrency": "BRL"
         },
         "featureList": [
           "Reduzir tamanho do arquivo PDF",
@@ -616,33 +614,39 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Como ",
-        "name": "Como comprimir pdf online",
-        "description": "Aprenda como fazer comprimir pdf usando o FastFormat",
+        "@type": "HowTo",
+        "name": "Como usar a ferramenta Comprimir PDF",
+        "description": "Reduza o tamanho do arquivo do seu PDF.",
         "step": [
           {
-            "@type": "Como Step",
+            "@type": "HowToStep",
             "position": 1,
-            "name": "Envie seu PDF",
-            "text": "Clique ou arraste e solte seu arquivo PDF na área de envio"
+            "name": "Enviar PDFs",
+            "text": "Clique ou arraste e solte um ou mais arquivos PDF"
           },
           {
-            "@type": "Como Step",
+            "@type": "HowToStep",
             "position": 2,
-            "name": "Escolha o Nível de Compressão",
-            "text": "Selecione o nível de compressão desejado: Leve, Equilibrado, Agressivo ou Extremo"
+            "name": "Escolher Algoritmo",
+            "text": "Selecione Condense (recomendado) ou Photon (para PDFs pesados com fotos)"
           },
           {
-            "@type": "Como Step",
+            "@type": "HowToStep",
             "position": 3,
-            "name": "Selecione o Algoritmo",
-            "text": "Escolha o algoritmo Condense (recomendado) ou Photon com base no seu tipo de PDF"
+            "name": "Selecionar Nível de Compressão",
+            "text": "Escolha a compressão Leve, Equilibrada, Agressiva ou Extrema"
           },
           {
-            "@type": "Como Step",
+            "@type": "HowToStep",
             "position": 4,
-            "name": "Comprimir e Baixar",
-            "text": "Clique em 'Comprimir PDF' e baixe seu arquivo otimizado"
+            "name": "Personalizar e Comprimir",
+            "text": "Opcionalmente, ative tons de cinza ou configurações personalizadas e comprima"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 5,
+            "name": "Baixar",
+            "text": "Salve seus PDFs comprimidos - até 90% menores"
           }
         ]
       }

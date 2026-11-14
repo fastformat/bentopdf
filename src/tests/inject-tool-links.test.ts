@@ -95,6 +95,11 @@ describe('injectIntoToolPage: related grid and academic CTA', () => {
     expect(out).not.toContain('lg:grid-cols-6');
   });
 
+  it('does not add a second related tools block when the page has one', () => {
+    expect(out).not.toContain('data-related-tools');
+    expect(out.match(/relacionadas/gi)).toHaveLength(1);
+  });
+
   it('links to signup with UTMs naming the tool page', () => {
     expect(out).toContain(
       'href="https://fastformat.co/accounts/signup/?utm_source=pdf_tools&amp;utm_medium=referral&amp;utm_campaign=pdf_academic_cta&amp;utm_content=juntar-pdf"'

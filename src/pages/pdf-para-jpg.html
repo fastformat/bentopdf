@@ -141,9 +141,7 @@
               <span class="font-semibold" data-i18n="upload.clickToSelect"
                 >Clique para selecionar um arquivo</span
               >
-              <span data-i18n="upload.orarraste e solte"
-                >ou arraste e solte</span
-              >
+              <span data-i18n="upload.orDragAndDrop">ou arraste e solte</span>
             </p>
             <p class="text-xs text-gray-500" data-i18n="upload.hints.singlePdf">
               A single PDF file
@@ -434,13 +432,13 @@
       {
         "@context": "https://schema.org",
         "@type": "SoftwareApplication",
-        "name": "Pdf Para Jpg - FastFormat",
-        "applicationCategory": "PDF Tool",
+        "name": "PDF para JPG | FastFormat",
+        "applicationCategory": "UtilitiesApplication",
         "operatingSystem": "Any - Web Browser",
         "offers": {
           "@type": "Offer",
           "price": "0",
-          "priceCurrency": "USD"
+          "priceCurrency": "BRL"
         }
       }
     </script>
@@ -448,27 +446,33 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Como ",
-        "name": "Como pdf para jpg online",
-        "description": "Aprenda como fazer pdf para jpg usando o FastFormat",
+        "@type": "HowTo",
+        "name": "Como usar a ferramenta PDF para JPG",
+        "description": "Converta cada página do PDF em uma imagem JPG.",
         "step": [
           {
-            "@type": "Como Step",
+            "@type": "HowToStep",
             "position": 1,
-            "name": "Enviar Arquivo",
-            "text": "Clique ou arraste e solte seu arquivo"
+            "name": "Enviar PDF",
+            "text": "Selecione o arquivo PDF que você quer converter para imagens"
           },
           {
-            "@type": "Como Step",
+            "@type": "HowToStep",
             "position": 2,
-            "name": "Processar",
-            "text": "Clique no botão de processar"
+            "name": "Escolher Qualidade",
+            "text": "Selecione a qualidade da imagem (Baixa, Média, Alta, Máxima)"
           },
           {
-            "@type": "Como Step",
+            "@type": "HowToStep",
             "position": 3,
-            "name": "Baixar",
-            "text": "Baixe o seu arquivo processado"
+            "name": "Selecionar Páginas",
+            "text": "Converta todas as páginas ou escolha páginas específicas para extrair"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "Baixar Imagens",
+            "text": "Salve as imagens JPG individualmente ou como um arquivo ZIP"
           }
         ]
       }
